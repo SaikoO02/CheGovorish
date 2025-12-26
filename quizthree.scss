@@ -1,0 +1,22 @@
+.headerquiz3 {
+    background-image: url(../images/win.png);
+    height: 750px;
+}
+
+.quiz-border3 :hover {
+    background-color: #FF7F39;
+    height: 44px;
+    border-radius: 5px;
+    width: fit-content; 
+}
+
+@media (max-width: 380px) {
+    .headerquiz3 {
+    background-image: url(../images/win-mobile.png);
+    height: 750px;
+}
+
+.quiz-border3 {
+    margin-top: 400px;
+}
+}

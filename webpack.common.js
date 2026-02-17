@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 const webpack = require('webpack')
 const path = require('path')
@@ -124,8 +123,5 @@ module.exports = {
       template: './src/article.html',
       filename: './article.html'
     }),
-  ],
-  optimization: {
-    minimizer: [new CssMinimizerPlugin()]
-  }
+  ]
 }

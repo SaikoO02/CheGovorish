@@ -1,0 +1,484 @@
+/* Блоки в стиле вкладки «Тимлидерство» из themes.html — отдельные классы artsec-* для правок */
+
+.page-articles .artsec {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.page-articles .artsec-repeat {
+  margin-top: 48px;
+}
+
+/* Вводный блок */
+.page-articles .artsec-intro {
+  margin-top: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-articles .artsec-intro__title {
+  margin: 0;
+  font-size: 40px;
+  font-family: "Inter Tight", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  text-transform: uppercase;
+  color: #f4f5f8;
+}
+
+.page-articles .artsec-intro__text {
+  font-size: 18px;
+  width: min(650px, 100%);
+  font-family: "JetBrains Mono", system-ui, -apple-system, Segoe UI, Roboto,
+    Arial, sans-serif;
+  font-weight: 300;
+  color: #f4f5f8;
+}
+
+.page-articles .artsec-intro__text p {
+  margin: 0 0 0.85em;
+}
+
+.page-articles .artsec-intro__text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Треугольники-декор */
+.page-articles .artsec-deco {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  min-width: 0;
+}
+
+.page-articles .artsec-deco--mt {
+  margin-top: 16px;
+}
+
+.page-articles .artsec-deco__triangle {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.page-articles .artsec-deco .artsec-deco__triangle:first-child {
+  margin-left: -40px;
+  margin-right: 0;
+}
+
+.page-articles .artsec-deco .artsec-deco__triangle:last-child {
+  margin-left: 0;
+  margin-right: -40px;
+}
+
+/* Строка «Статьи» + кнопка */
+.page-articles .artsec-toolbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.page-articles .artsec-toolbar__title {
+  margin: 0;
+  font-size: 40px;
+  font-family: "Inter Tight", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  text-transform: uppercase;
+  color: #f4f5f8;
+}
+
+.page-articles .artsec-toolbar__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f5f8;
+  color: #ff7f39;
+  border: 2px solid #ff7f39;
+  border-radius: 6px;
+  font-size: 18px;
+  font-family: "JetBrains Mono", system-ui, -apple-system, Segoe UI, Roboto,
+    Arial, sans-serif;
+  width: 191px;
+  height: 46px;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.page-articles .artsec-toolbar__btn:hover {
+  opacity: 0.92;
+}
+
+/* Две широкие карточки в ряд */
+.page-articles .artsec-cols {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  min-width: 0;
+}
+
+.page-articles .artsec-cols--equal {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.page-articles .artsec-cols--equal .artsec-cols__item:nth-child(2) .artsec-card-title {
+  width: auto;
+  max-width: 100%;
+}
+
+.page-articles .artsec-cols__item {
+  flex: 0 0 auto;
+  min-width: 0;
+  background-color: #000;
+  border-radius: 24px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
+  gap: 12px;
+  align-items: start;
+  padding: 20px;
+  min-height: 365px;
+  height: 365px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-articles .artsec-cols__item:first-child {
+  width: 873px;
+  max-width: 100%;
+}
+
+.page-articles .artsec-cols__item:nth-child(2) {
+  width: 427px;
+  max-width: 100%;
+}
+
+.page-articles .artsec-cols__item:nth-child(2) .artsec-card-title {
+  width: 300px;
+  max-width: 100%;
+}
+
+.page-articles .artsec-cols__item--bg713 {
+  background-image: url("image/image713.svg");
+}
+
+.page-articles .artsec-cols__item--bg720 {
+  background-image: url("image/image720.svg");
+}
+
+.page-articles .artsec-cols__item--bg714 {
+  background-image: url("image/image714.svg");
+}
+
+.page-articles .artsec-cols__item--bg36 {
+  background-image: url("image/image36.svg");
+}
+
+.page-articles .artsec-cols__item--bg25 {
+  background-image: url("image/image25.svg");
+}
+
+.page-articles .artsec-cols__item--bg46 {
+  background-image: url("image/image46.svg");
+}
+
+.page-articles .artsec-cols__item--bg25b {
+  background-image: url("image/image25.svg");
+}
+
+.page-articles .artsec-cols__item--bg46b {
+  background-image: url("image/image46.svg");
+}
+
+/* Нижний ряд: большая карточка + две узкие */
+.page-articles .artsec-split {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.page-articles .artsec-split--reverse {
+  flex-direction: row-reverse;
+}
+
+/* Большая карточка (как .Project_or_Product) */
+.page-articles .artsec-feature {
+  position: relative;
+  background-color: #000;
+  width: 873px;
+  max-width: 100%;
+  flex: 0 0 auto;
+  min-width: 0;
+  min-height: 747px;
+  height: auto;
+  border-radius: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px;
+}
+
+.page-articles .artsec-feature--bg720 {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%),
+    url("image/image720.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
+}
+
+.page-articles .artsec-feature--bg717 {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%),
+    url("image/image717.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
+}
+
+.page-articles .artsec-feature--bg10 {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%),
+    url("image/image10.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
+}
+
+.page-articles .artsec-feature--bg10b {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%),
+    url("image/image10.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
+}
+
+.page-articles .artsec-feature__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+}
+
+.page-articles .artsec-feature__intro {
+  flex: 1;
+  min-width: 0;
+  max-width: min(700px, 100%);
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.page-articles .artsec-feature__title {
+  color: #e0e0e0;
+  font-size: 48px;
+  font-family: "Inter Tight", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.page-articles .artsec-feature__lead {
+  color: #c8c8c8;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.4;
+  max-width: 560px;
+  align-self: flex-start;
+  flex-shrink: 0;
+  font-family: "JetBrains Mono", system-ui, -apple-system, Segoe UI, Roboto,
+    Arial, sans-serif;
+  font-weight: 300;
+}
+
+/* Колонка из двух карточек */
+.page-articles .artsec-pair {
+  width: 427px;
+  max-width: 100%;
+  flex: 0 0 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.page-articles .artsec-pair__card {
+  flex: 0 0 auto;
+  width: 427px;
+  max-width: 100%;
+  height: 365px;
+  background-color: #000;
+  box-sizing: border-box;
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
+  gap: 12px;
+  align-items: start;
+  padding: 16px 20px;
+}
+
+.page-articles .artsec-pair__card--bg715 {
+  background-image: url("image/image715.svg");
+}
+
+.page-articles .artsec-pair__card--bg717 {
+  background-image: url("image/image36.svg");
+}
+
+.page-articles .artsec-pair__card--bg715b {
+  background-image: url("image/image715.svg");
+}
+
+.page-articles .artsec-pair__card--bg717b {
+  background-image: url("image/image36.svg");
+}
+
+.page-articles .artsec-pair__card .artsec-card-title {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-articles .artsec-pair__card .artsec-time {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+}
+
+/* Заголовки на карточках сетки */
+.page-articles .artsec-cols__item .artsec-card-title {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  align-self: end;
+}
+
+.page-articles .artsec-cols__item .artsec-time {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+}
+
+.page-articles .artsec-card-title {
+  color: #e0e0e0;
+  width: 250px;
+  max-width: 100%;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0;
+  align-self: end;
+  font-family: "Inter Tight", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  font-weight: 400;
+}
+
+.page-articles .artsec-card-title--nowrap {
+  white-space: nowrap;
+}
+
+.page-articles .artsec-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+
+.page-articles .artsec-time__icon {
+  width: 26px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+  transform: translateY(-2px);
+}
+
+.page-articles .artsec-time__text {
+  color: #e0e0e0;
+  line-height: 1.2;
+  font-family: "Inter Tight", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .page-articles .artsec-cols {
+    flex-direction: column;
+  }
+
+  .page-articles .artsec-cols__item,
+  .page-articles .artsec-cols__item:first-child,
+  .page-articles .artsec-cols__item:nth-child(2) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 365px;
+  }
+
+  .page-articles .artsec-split {
+    flex-direction: column;
+  }
+
+  .page-articles .artsec-split--reverse {
+    flex-direction: column;
+  }
+
+  .page-articles .artsec-feature {
+    width: 100%;
+    min-height: 520px;
+  }
+
+  .page-articles .artsec-pair {
+    width: 100%;
+  }
+
+  .page-articles .artsec-pair__card {
+    width: 100%;
+  }
+}

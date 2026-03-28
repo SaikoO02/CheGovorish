@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Статьи</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500;700&family=JetBrains+Mono:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="articles.css" />
+    <link rel="stylesheet" href="articles-blocks.css" />
+    <script src="articles.js" defer></script>
+    <script src="footer-loader.js" defer></script>
+    <script src="footer-animation.js" defer></script>
+  </head>
+
+  <body class="page-articles">
+    <header class="block main_page_background">
+      <div class="container">
+        <div class="header">
+          <a class="logo" href="/" aria-label="Logo">Логотип</a>
+          <nav class="menu" aria-label="Main menu">
+            <a class="menu__item" href="themes.html">темы</a>
+            <a class="menu__item" href="glossary.html">глоссарий</a>
+            <a class="menu__item" href="articles.html" aria-current="page">статьи</a>
+            <a class="menu__item" href="quiz.html">квизы</a>
+            <a class="menu__item" href="#">о медиа</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="articles-page" data-articles-tabs aria-labelledby="articles-title">
+        <div class="articles__head">
+          <h1 class="articles__title" id="articles-title">СТАТЬИ</h1>
+        </div>
+
+        <div
+          class="articles-tabs"
+          role="tablist"
+          aria-label="Фильтр по типу материалов"
+        >
+          <button
+            type="button"
+            role="tab"
+            class="articles-tabs__btn articles-tabs__btn--active"
+            id="articles-tab-all"
+            data-tab="all"
+            aria-selected="true"
+            aria-controls="articles-panel-all"
+          >
+          Техническое IT
+          </button>
+          <button
+            type="button"
+            role="tab"
+            class="articles-tabs__btn"
+            id="articles-tab-longreads"
+            data-tab="longreads"
+            aria-selected="false"
+            aria-controls="articles-panel-longreads"
+          >
+          Творческое IT
+          </button>
+          <button
+            type="button"
+            role="tab"
+            class="articles-tabs__btn"
+            id="articles-tab-notes"
+            data-tab="notes"
+            aria-selected="false"
+            aria-controls="articles-panel-notes"
+          >
+          Менеджмент
+          </button>
+        </div>
+
+        <div class="articles-tabs__panels">
+          <div
+            class="articles-tabs__panel articles-tabs__panel--active"
+            id="articles-panel-all"
+            role="tabpanel"
+            aria-labelledby="articles-tab-all"
+            data-panel="all"
+          >
+            <div class="artsec">
+
+              <div class="artsec-cols">
+                <div
+                  class="artsec-cols__item"
+                  style="background-image: url('image/image720.svg');"
+                >
+                  <span class="artsec-tag">Backend/fronted-разработка</span>
+                  <div class="artsec-card-title artsec-card-title--nowrap">
+                    Асинхронность в backend-приложениях
+                  </div>
+                  <div class="artsec-time">
+                    <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                    <div class="artsec-time__text">6 мин</div>
+                  </div>
+                </div>
+                <div
+                  class="artsec-cols__item"
+                  style="background-image: url('image/image36.svg');"
+                >
+                  <span class="artsec-tag">DevOps-инженерия</span>
+                  <div class="artsec-card-title">GitOps: модный тренд или рабочий подход?</div>
+                  <div class="artsec-time">
+                    <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                    <div class="artsec-time__text">6 мин</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="artsec-split artsec-split--reverse">
+                <div class="artsec-pair">
+                  <div class="artsec-pair__card artsec-pair__card--bg715">
+                    <span class="artsec-tag">Гейм-разработка</span>
+                    <div class="artsec-card-title artsec-card-title--nowrap">
+                      Чек-лист подготовки игры<br>к релизу от разработчика
+                    </div>
+                    <div class="artsec-time">
+                      <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                      <div class="artsec-time__text">8 мин</div>
+                    </div>
+                  </div>
+                  <div class="artsec-pair__card artsec-pair__card--bg717">
+                    <span class="artsec-tag">Тестирование</span>
+                    <div class="artsec-card-title">
+                      Как выбрать фреймворк для автотестов
+                    </div>
+                    <div class="artsec-time">
+                      <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                      <div class="artsec-time__text">9 мин</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="artsec-feature artsec-feature--bg717">
+                  <span class="artsec-tag">Backend/fronted-разработка</span>
+                  <div class="artsec-feature__top">
+                    <div class="artsec-feature__intro">
+                      <div class="artsec-feature__title">Современный React</div>
+                    </div>
+                    <div class="artsec-time">
+                      <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                      <div class="artsec-time__text">9 мин</div>
+                    </div>
+                  </div>
+                  <p class="artsec-feature__lead">
+                    что использовать в 2026, а что уже пора забыть?
+                  </p>
+                </div>
+              </div>
+              <div class="artsec-repeat">
+                <div class="artsec-cols artsec-cols--equal">
+                  <div class="artsec-cols__item artsec-cols__item--bg25">
+                    <span class="artsec-tag">Backend/fronted-разработка</span>
+                    <div class="artsec-card-title artsec-card-title--nowrap">
+                      Ошибки в Design System, которые<br>делают все
+                    </div>
+                    <div class="artsec-time">
+                      <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                      <div class="artsec-time__text">4 мин</div>
+                    </div>
+                  </div>
+                  <div class="artsec-cols__item artsec-cols__item--bg46">
+                    <span class="artsec-tag">Тестирование</span>
+                    <div class="artsec-card-title">Контрактное тестирование<br>микросервисов</div>
+                    <div class="artsec-time">
+                      <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                      <div class="artsec-time__text">6 мин</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="artsec-split">
+                  <div class="artsec-pair">
+                    <div class="artsec-pair__card artsec-pair__card--bg715">
+                      <span class="artsec-tag">DevOps-инженерия</span>
+                      <div class="artsec-card-title artsec-card-title--nowrap">
+                        Облачная инфраструктура<br>vs on-prem
+                      </div>
+                      <div class="artsec-time">
+                        <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                        <div class="artsec-time__text">5 мин</div>
+                      </div>
+                    </div>
+                    <div class="artsec-pair__card artsec-pair__card--bg717">
+                      <span class="artsec-tag">Гейм-разработка</span>
+                      <div class="artsec-card-title">
+                        Как выбрать игровой движок под инди-проект
+                      </div>
+                      <div class="artsec-time">
+                        <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                        <div class="artsec-time__text">7 мин</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="artsec-feature artsec-feature--bg10">
+                    <span class="artsec-tag">Гейм-разработка</span>
+                    <div class="artsec-feature__top">
+                      <div class="artsec-feature__intro">
+                        <div class="artsec-feature__title">AI в играх</div>
+                      </div>
+                      <div class="artsec-time">
+                        <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                        <div class="artsec-time__text">6 мин</div>
+                      </div>
+                    </div>
+                    <p class="artsec-feature__lead">
+                      от простых NPC до сложного поведения
+                    </p>
+                  </div>
+                </div>
+
+              <div class="artsec-repeat artsec-repeat--more">
+                <div class="artsec-cols artsec-cols--equal artsec-cols--more">
+                  <div class="artsec-cols__item artsec-cols__item--bg25b">
+                    <span class="artsec-tag">DevOps-инженерия</span>
+                    <div class="artsec-card-title artsec-card-title--nowrap">
+                      Incident management: 
+                      <br>разбор реальных фейлов
+                    </div>
+                    <div class="artsec-time">
+                      <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                      <div class="artsec-time__text">9 мин</div>
+                    </div>
+                  </div>
+                  <div class="artsec-cols__item artsec-cols__item--bg46b">
+                    <span class="artsec-tag">Backend/fronted-разработка</span>
+                    <div class="artsec-card-title">Безопасность backend-API</div>
+                    <div class="artsec-time">
+                      <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                      <div class="artsec-time__text">8 мин</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="artsec-split artsec-split--reverse artsec-split--more">
+                  <div class="artsec-pair">
+                    <div class="artsec-pair__card artsec-pair__card--bg715b">
+                      <span class="artsec-tag">Гейм-разработка</span>
+                      <div class="artsec-card-title artsec-card-title--nowrap">
+                        Реальные кейсы<br>и ограничения Godot<br>в продакшене
+                      </div>
+                      <div class="artsec-time">
+                        <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                        <div class="artsec-time__text">9 мин</div>
+                      </div>
+                    </div>
+                    <div class="artsec-pair__card artsec-pair__card--bg717b">
+                      <span class="artsec-tag">Тестирование</span>
+                      <div class="artsec-card-title">
+                        Как писать тесты,<br>которые можно<br>поддерживать годами?
+                      </div>
+                      <div class="artsec-time">
+                        <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                        <div class="artsec-time__text">5 мин</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    class="artsec-feature artsec-feature--bg10b"
+                    href="articles/article-it-slang-top10.html"
+                    aria-label="IT-сленг: ТОП-10 слов, которых вы не знали — открыть статью"
+                  >
+                    <span class="artsec-tag">DevOps-инженерия</span>
+                    <div class="artsec-feature__top">
+                      <div class="artsec-feature__intro">
+                        <div class="artsec-feature__title">IT-сленг</div>
+                      </div>
+                      <div class="artsec-time">
+                        <img class="artsec-time__icon" src="image/ICONS2.svg" width="26" height="26" alt="" />
+                        <div class="artsec-time__text">8 мин</div>
+                      </div>
+                    </div>
+                    <p class="artsec-feature__lead">
+                      ТОП-10 слов, которых вы не знали
+                    </p>
+                  </a>
+                </div>
+
+                <div class="artsec-deco artsec-deco--mt artsec-deco--more" aria-hidden="true">
+                  <img class="artsec-deco__triangle" src="image/Polygon1.svg" alt="" />
+                  <img class="artsec-deco__triangle" src="image/Polygon2.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="articles-tabs__panel"
+            id="articles-panel-longreads"
+            role="tabpanel"
+            aria-labelledby="articles-tab-longreads"
+            data-panel="longreads"
+            hidden
+          ></div>
+          <div
+            class="articles-tabs__panel"
+            id="articles-panel-notes"
+            role="tabpanel"
+            aria-labelledby="articles-tab-notes"
+            data-panel="notes"
+            hidden
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-container"></div>
+  </body>
+</html>

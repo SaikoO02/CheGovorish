@@ -1,4 +1,3 @@
-// Article page interactions: back, scroll-to-top, theme toggle.
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
     var THEME_KEY = "articleTheme";
@@ -13,12 +12,11 @@
       body.classList.toggle("theme-light", isLight);
       if (themeBtnImg) {
         themeBtnImg.src = isLight
-          ? "../image/moonstarssvgrepocom1.svg"
-          : "../image/sun2svgrepocom1.svg";
+          ? "/image/moonstarssvgrepocom1.svg"
+          : "/image/sun2svgrepocom1.svg";
       }
     }
 
-    // Initial theme from storage (default: dark)
     try {
       applyTheme(localStorage.getItem(THEME_KEY) || "dark");
     } catch (e) {

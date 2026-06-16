@@ -44,7 +44,38 @@ console.log("JS подключен");
       }
     }
 
-    const isThemesPage = window.location.href.includes("themes.html");
+    const menuBurger = document.querySelector(".menu-burger");
+    const menu = document.querySelector(".menu");
+    if (menuBurger && menu) {
+      const closeMenu = () => {
+        menu.classList.remove("is-open");
+        menuBurger.setAttribute("aria-expanded", "false");
+      };
+      const toggleMenu = () => {
+        const isOpen = menu.classList.toggle("is-open");
+        menuBurger.setAttribute("aria-expanded", String(isOpen));
+      };
+
+      menuBurger.setAttribute("aria-expanded", "false");
+      menuBurger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleMenu();
+      });
+
+      menu.addEventListener("click", (e) => {
+        if (e.target.closest(".menu__item")) closeMenu();
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!menu.classList.contains("is-open")) return;
+        if (e.target.closest(".menu") || e.target.closest(".menu-burger")) return;
+        closeMenu();
+      });
+    }
+
+    const isThemesPage =
+      window.location.href.includes("themes.html") ||
+      window.location.href.includes("/pages/themes/");
 
     const container = document.querySelector(".accordion");
     if (!container) {

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../../" />
+    <title>Глоссарий</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500;700&family=JetBrains+Mono:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages/glossary/glossary.css" />
+    <script src="pages/glossary/glossary.js" defer></script>
+    <script src="footer-loader.js" defer></script>
+    <script src="footer-animation.js" defer></script>
+  </head>
+
+  <body class="page-glossary">
+    <header class="block main_page_background">
+      <div class="container">
+        <div class="header">
+          <a class="logo" href="/" aria-label="Logo">Логотип</a>
+          <nav class="menu" aria-label="Main menu">
+            <a class="menu__item" href="pages/themes/">темы</a>
+            <a class="menu__item" href="pages/glossary/" aria-current="page">глоссарий</a>
+            <a class="menu__item" href="pages/articles/">статьи</a>
+            <a class="menu__item" href="pages/quiz/">квизы</a>
+            <a class="menu__item" href="#">о медиа</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="glossary" aria-labelledby="glossary-title">
+        <div class="glossary__head">
+          <h1 class="glossary__title" id="glossary-title">ГЛОССАРИЙ</h1>
+        </div>
+
+        <div class="glossary__toolbar" aria-label="Поиск по глоссарию">
+          <div class="glossary__search-wrap">
+            <input
+              class="glossary__search-input"
+              id="glossary-search"
+              type="search"
+              placeholder="Найти слово"
+              aria-label="Найти слово"
+            />
+            <span class="glossary__search-icon" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="glossary__groups" id="glossary-list" aria-label="Список терминов">
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-container"></div>
+  </body>
+</html>
+

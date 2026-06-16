@@ -23,9 +23,7 @@ window.footerLoaded = loadFooterHtml()
     if (!container) return;
 
     container.innerHTML = html;
-
-    // Fix relative asset paths inside the injected footer (e.g. "image/LogoHSE.svg"),
-    // so it works from pages in subfolders like /articles/.
+    
     let prefix = '';
     if (loadedFrom.startsWith('../')) prefix = '../';
     if (loadedFrom.startsWith('/')) prefix = '/';

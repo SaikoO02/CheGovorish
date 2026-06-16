@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../../" />
+    <title>Квизы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500;700&family=JetBrains+Mono:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages/quiz/quiz.css" />
+    <script src="pages/quiz/quiz.js" defer></script>
+    <script src="footer-loader.js" defer></script>
+    <script src="footer-animation.js" defer></script>
+  </head>
+  <body class="page-quiz">
+    <header class="block main_page_background">
+      <div class="container">
+        <div class="header">
+          <a class="logo" href="/" aria-label="Logo">Логотип</a>
+          <nav class="menu" aria-label="Main menu">
+            <a class="menu__item" href="pages/themes/">темы</a>
+            <a class="menu__item" href="pages/glossary/">глоссарий</a>
+            <a class="menu__item" href="pages/articles/">статьи</a>
+            <a class="menu__item" href="pages/quiz/" aria-current="page">квизы</a>
+            <a class="menu__item" href="#">о медиа</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="quiz-page-title">КВИЗЫ</h1>
+
+      <section class="quiz-catalog" aria-label="Каталог квизов">
+        <div class="quiz-catalog__top">
+          <div class="quiz-catalog__tabs" aria-label="Темы квизов">
+            <button
+              class="quiz-chip"
+              type="button"
+              data-quiz-topic="tech"
+              aria-pressed="true"
+            >
+              Техническое IT
+            </button>
+            <button
+              class="quiz-chip"
+              type="button"
+              data-quiz-topic="creative"
+              aria-pressed="false"
+            >
+              Творческое IT
+            </button>
+            <button
+              class="quiz-chip"
+              type="button"
+              data-quiz-topic="mgmt"
+              aria-pressed="false"
+            >
+              Менеджмент
+            </button>
+          </div>
+
+          <div class="quiz-catalog__mode" aria-label="Тип ответов">
+            <span>Короткие ответы</span>
+            <span class="quiz-mode__sep">//</span>
+            <span>Длинные ответы</span>
+          </div>
+        </div>
+
+        <div class="quiz-catalog__list" aria-label="Список квизов">
+          <article
+            class="quiz-hero"
+            id="quiz-hero-card-tech"
+            role="button"
+            tabindex="0"
+            aria-label="Открыть квиз Айтишный термин"
+            data-quiz-topic-card="tech"
+            data-quiz-answer-type="short"
+            data-quiz-href="pages/quiz/run.html"
+          >
+            <div class="quiz-hero__inner">
+              <div class="quiz-hero__left">
+                <div class="quiz-hero__badge">
+                  <span class="quiz-hero__badge-icon" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                  </span>
+                  <span>Короткие ответы</span>
+                </div>
+
+                <div class="quiz-hero__copy">
+                  <div class="quiz-hero__meta">10 дней назад × 115 игроков</div>
+                  <h2 class="quiz-hero__title">Какой ты продакт-менеджер?</h2>
+                  <p class="quiz-hero__desc">
+                    10 вопросов о программисстком сленге, железе и разработке. Выбери правильный вариант из четырёх,
+                    набери баллы и узнай, какой ты айтишник. Поехали!
+                  </p>
+                </div>
+              </div>
+
+              <div class="quiz-hero__visual" aria-hidden="true">
+                <div class="quiz-hero__visual-shape"></div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="quiz-hero"
+            id="quiz-hero-card-tech-long"
+            role="button"
+            tabindex="0"
+            aria-label="Открыть квиз Айтишный термин (длинные ответы)"
+            data-quiz-topic-card="tech"
+            data-quiz-answer-type="long"
+            hidden
+          >
+            <div class="quiz-hero__inner">
+              <div class="quiz-hero__left">
+                <div class="quiz-hero__badge">
+                  <span class="quiz-hero__badge-icon" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                  </span>
+                  <span>Длинные ответы</span>
+                </div>
+
+                <div class="quiz-hero__copy">
+                  <div class="quiz-hero__meta">—</div>
+                  <h2 class="quiz-hero__title">Айтишный термин</h2>
+                  <p class="quiz-hero__desc">Формат с разбором: выбирай вариант и смотри объяснение, почему он правильный.</p>
+                </div>
+                <button class="quiz-hero__cta" type="button" data-quiz-start>Начать</button>
+              </div>
+
+              <div class="quiz-hero__visual" aria-hidden="true">
+                <div class="quiz-hero__visual-shape"></div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="quiz-hero"
+            id="quiz-hero-card-creative"
+            role="button"
+            tabindex="0"
+            aria-label="Открыть квиз для творческого IT"
+            data-quiz-topic-card="creative"
+            data-quiz-answer-type="short"
+            hidden
+          >
+            <div class="quiz-hero__inner">
+              <div class="quiz-hero__left">
+                <div class="quiz-hero__badge">
+                  <span class="quiz-hero__badge-icon" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                  </span>
+                  <span>Короткие ответы</span>
+                </div>
+                <div class="quiz-hero__meta">—</div>
+                <h2 class="quiz-hero__title">Скоро</h2>
+                <p class="quiz-hero__desc">Добавим квизы по дизайну, геймдеву и креативным ролям.</p>
+                <button class="quiz-hero__cta" type="button" disabled aria-disabled="true">Скоро</button>
+              </div>
+              <div class="quiz-hero__visual" aria-hidden="true">
+                <div class="quiz-hero__visual-shape"></div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="quiz-hero"
+            id="quiz-hero-card-mgmt"
+            role="button"
+            tabindex="0"
+            aria-label="Открыть квиз для менеджмента"
+            data-quiz-topic-card="mgmt"
+            data-quiz-answer-type="short"
+            hidden
+          >
+            <div class="quiz-hero__inner">
+              <div class="quiz-hero__left">
+                <div class="quiz-hero__badge">
+                  <span class="quiz-hero__badge-icon" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                  </span>
+                  <span>Короткие ответы</span>
+                </div>
+                <div class="quiz-hero__meta">—</div>
+                <h2 class="quiz-hero__title">Скоро</h2>
+                <p class="quiz-hero__desc">Добавим квизы по продукту, проектам и коммуникации.</p>
+                <button class="quiz-hero__cta" type="button" disabled aria-disabled="true">Скоро</button>
+              </div>
+              <div class="quiz-hero__visual" aria-hidden="true">
+                <div class="quiz-hero__visual-shape"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-feed" aria-label="Ещё квизы">
+        <div class="quiz-feed__grid">
+          <a class="quiz-tile quiz-tile--left-top" href="pages/quiz/run.html" data-quiz-topic-card="creative" data-quiz-answer-type="short" hidden>
+            <div class="quiz-tile__media" style="background-image: url('image/image704.svg');"></div>
+            <div class="quiz-tile__body">
+              <div class="quiz-tile__meta">1 день назад × 4 игрока</div>
+              <div class="quiz-tile__title">Компоненты в Figma</div>
+              <div class="quiz-tile__desc">Ты профи в Figma или учишься работать с компонентами? Проверь свой уровень нашим тестом.</div>
+              <div class="quiz-tile__badge">
+                <span class="quiz-tile__badge-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <span>Короткие ответы</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="quiz-tile quiz-tile--left-bottom" href="pages/quiz/run.html" data-quiz-topic-card="creative" data-quiz-answer-type="short" hidden>
+            <div class="quiz-tile__media" style="background-image: url('image/image203.png');"></div>
+            <div class="quiz-tile__body">
+              <div class="quiz-tile__meta">3 дня назад × 27 игроков</div>
+              <div class="quiz-tile__title">Какая кнопка то?</div>
+              <div class="quiz-tile__desc">Проверь себя как UX/UI дизайнер: какая форма правильнее или какую кнопку выберет пользователь?</div>
+              <div class="quiz-tile__badge">
+                <span class="quiz-tile__badge-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <span>Короткие ответы</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="quiz-tile quiz-tile--right-large" href="pages/quiz/run.html" data-quiz-topic-card="mgmt" data-quiz-answer-type="short" hidden>
+            <div class="quiz-tile__media" style="background-image: url('image/Image202.png');"></div>
+            <div class="quiz-tile__body">
+              <div class="quiz-tile__meta">15 дней назад × 154 игрока</div>
+              <div class="quiz-tile__title">Твой уровень усталости</div>
+              <div class="quiz-tile__desc">Пройди тест на выгорание тимлида. По шкале: «всё ок» — «пора в отпуск» — «нужен коуч/терапевт».</div>
+              <div class="quiz-tile__badge">
+                <span class="quiz-tile__badge-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <span>Короткие ответы</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </section>
+        <div class="quiz-catalog__list" aria-label="Список квизов">
+          <article
+            class="quiz-hero"
+            role="button"
+            tabindex="0"
+            aria-label="Открыть квиз Айтишный термин"
+            data-quiz-topic-card="tech"
+            data-quiz-answer-type="short"
+            data-quiz-href="pages/quiz/run.html"
+          >
+            <div class="quiz-hero__inner">
+              <div class="quiz-hero__left">
+                <div class="quiz-hero__badge">
+                  <span class="quiz-hero__badge-icon" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                  </span>
+                  <span>Короткие ответы</span>
+                </div>
+                <div class="quiz-hero__copy">
+                  <div class="quiz-hero__meta">25 дней назад × 215 игроков</div>
+                  <h2 class="quiz-hero__title">шутки<br>
+                    айтишников</h2>
+                  <p class="quiz-hero__desc">
+                    Узнай свой уровень юмора в мире IT,<br>
+                    новичок или продвинутый?
+                  </p>
+                </div>
+              </div>
+
+              <div class="quiz-hero__visual" aria-hidden="true">
+                <div class="quiz-hero__visual-shape"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <div id="footer-container"></div>
+  </body>
+</html>
+

@@ -1,0 +1,90 @@
+body.page-articles {
+  background: #000;
+  color: #f4f5f8;
+}
+
+body.page-articles .main_page_background {
+  background-image: none;
+}
+
+.articles-page {
+  margin-top: 28px;
+  margin-bottom: 90px;
+}
+
+.articles__head {
+  margin-bottom: 28px;
+}
+
+.articles__title {
+  margin: 0;
+  font-family: "Inter Tight",
+    Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+.articles-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.articles-tabs__btn {
+  margin: 0;
+  padding: 8px 14px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  font-family: "JetBrains Mono", system-ui, -apple-system, Segoe UI, Roboto,
+    Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  background: rgba(244, 245, 248, 0.85);
+  color: #000;
+  cursor: pointer;
+}
+
+.articles-tabs__btn:hover {
+  border-color: #000;
+  background: #ffb48b;
+  color: #000;
+}
+
+.articles-tabs__btn--active {
+  background: #ff7f39;
+  border-color: #000;
+  color: #000;
+}
+
+.articles-tabs__btn:focus-visible {
+  outline: 2px solid #ff7f39;
+  outline-offset: 3px;
+}
+
+.articles-tabs__panels {
+  margin-top: 28px;
+  min-height: 120px;
+}
+
+.articles-tabs__panel {
+  display: none;
+}
+
+.articles-tabs__panel--active {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .articles__title {
+    font-size: 40px;
+  }
+
+  .articles-tabs__btn {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+}

@@ -29,7 +29,7 @@ export default function ArticleHeader() {
             <a className="logo" href="/" aria-label="Logo">Логотип</a>
             <button type="button" className="article-header__sun" aria-label="Сменить тему" onClick={toggle}>
               <img
-                src={theme === 'light' ? '/image/moonstarssvgrepocom1.svg' : '/image/sun2svgrepocom1.svg'}
+                src={theme === 'light' ? '../../../image/moonstarssvgrepocom1.svg' : '../../../image/sun2svgrepocom1.svg'}
                 alt=""
                 width="28"
                 height="28"

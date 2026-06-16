@@ -19,13 +19,25 @@ export default function ArticleLayout({
 
     const container = document.getElementById('footer-container')
     if (container && !container.innerHTML) {
-      fetch('/footer.html')
-        .then(r => r.text())
-        .then(html => {
+      const candidates = ['footer.html', '../footer.html', '../../footer.html', '../../../footer.html']
+      const tryNext = i =>
+        fetch(candidates[i])
+          .then(r => {
+            if (!r.ok) throw new Error(`HTTP ${r.status} for ${candidates[i]}`)
+            return r.text().then(html => ({ html, loadedFrom: candidates[i] }))
+          })
+          .catch(err => {
+            if (i + 1 < candidates.length) return tryNext(i + 1)
+            throw err
+          })
+
+      tryNext(0)
+        .then(({ html, loadedFrom }) => {
           container.innerHTML = html
+          const prefix = loadedFrom.slice(0, loadedFrom.length - 'footer.html'.length)
           container.querySelectorAll('[src]').forEach(el => {
             const src = el.getAttribute('src')
-            if (src && src.startsWith('image/')) el.setAttribute('src', '/' + src)
+            if (src && src.startsWith('image/')) el.setAttribute('src', prefix + src)
           })
         })
         .catch(() => {})
@@ -59,7 +71,7 @@ export default function ArticleLayout({
           <div className="article-page__byline">
             <time className="article-page__date" dateTime={date}>{dateDisplay}</time>
             <div className="article-page__read">
-              <img className="article-page__read-icon" src="/image/ICONS2.svg" alt="" width="26" height="26" />
+              <img className="article-page__read-icon" src="../../../image/ICONS2.svg" alt="" width="26" height="26" />
               <span className="article-page__read-time">{readTime}</span>
             </div>
           </div>
@@ -80,11 +92,11 @@ export default function ArticleLayout({
 
           <nav className="article-page__bottom-nav" aria-label="Навигация по статье">
             <a href="/pages/themes/" className="article-page__nav-icon article-page__nav-back" aria-label="К списку тем" onClick={handleBack}>
-              <img className="article-page__nav-img" src="/image/ICONS3.svg" alt="" width="43" height="43" />
+              <img className="article-page__nav-img" src="../../../image/ICONS3.svg" alt="" width="43" height="43" />
             </a>
             <div className="article-page__bottom-nav-right">
               <a href="#page-top" className="article-page__nav-icon article-page__nav-top" aria-label="Наверх" onClick={handleTop}>
-                <img className="article-page__nav-img article-page__nav-img--top" src="/image/ICONS3.svg" alt="" width="43" height="43" />
+                <img className="article-page__nav-img article-page__nav-img--top" src="../../../image/ICONS3.svg" alt="" width="43" height="43" />
               </a>
               <a href={nextHref} className="article-page__nav-next">СЛЕДУЮЩАЯ СТАТЬЯ</a>
             </div>

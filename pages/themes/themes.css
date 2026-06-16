@@ -93,7 +93,7 @@
 }
 
 .accordion-item.theme1::before {
-  background-image: url("/image/Tema1.svg");
+  background-image: url("../../image/Tema1.svg");
 }
 
 .accordion-item.theme2 {
@@ -102,7 +102,7 @@
 }
 
 .accordion-item.theme2::before {
-  background-image: url("/image/Tema2.svg");
+  background-image: url("../../image/Tema2.svg");
 }
 
 .accordion-item.theme3 {
@@ -111,7 +111,7 @@
 }
 
 .accordion-item.theme3::before {
-  background-image: url("/image/Tema3.svg");
+  background-image: url("../../image/Tema3.svg");
 }
 
 .accordion-item:not(.open) {
@@ -606,20 +606,20 @@ header.main_page_background {
 .Project_management_two_columns_item:first-child {
   width: 873px;
   max-width: 100%;
-  background-image: url("/image/image702.svg");
+  background-image: url("../../image/image702.svg");
 }
 .Project_management_two_columns_item:nth-child(2) {
   width: 427px;
   max-width: 100%;
-  background-image: url("/image/image703.svg");
+  background-image: url("../../image/image703.svg");
 }
 
 /* У творческой темы (ТВОРЧЕСКОЕ IT) свои фоновые картинки */
 .accordion-item.theme2 .Project_management_two_columns_item--uxui-col1 {
-  background-image: url("/image/image720.svg");
+  background-image: url("../../image/image720.svg");
 }
 .accordion-item.theme2 .Project_management_two_columns_item--uxui-col2 {
-  background-image: url("/image/image721.svg");
+  background-image: url("../../image/image721.svg");
 }
 
 /* Дизайн для ошибок (theme2-tab1) — blend-mode hover */
@@ -635,7 +635,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image11.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image11.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -646,7 +646,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab1"] .Project_management_two_columns_item--uxui-col1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image11.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image11.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -699,7 +699,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image12.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image12.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -710,7 +710,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab1"] .article-second--uxui-second:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image12.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image12.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -762,7 +762,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image11.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image11.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -773,7 +773,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab1"] .article-first--uxui-first:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image11.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image11.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -823,7 +823,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image14.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image14.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -834,7 +834,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab1"] .Project_management_two_columns_item--uxui-col2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image14.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image14.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -876,20 +876,20 @@ header.main_page_background {
   max-width: 100%;
 }
 .Project_management_two_columns_item--707 {
-  background-image: url("/image/image8.svg");
+  background-image: url("../../image/image8.svg");
 }
 .Project_management_two_columns_item--708 {
-  background-image: url("/image/image708.svg");
+  background-image: url("../../image/image708.svg");
 }
 .Project_management_two_columns_item--710 {
-  background-image: url("/image/image710.svg");
+  background-image: url("../../image/image710.svg");
 }
 
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab2"] .Project_management_two_columns_item--707 {
-  background-image: url("/image/image8.svg");
+  background-image: url("../../image/image8.svg");
 }
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab2"] .Project_management_two_columns_item--710 {
-  background-image: url("/image/image710.svg");
+  background-image: url("../../image/image710.svg");
 }
 .Project_management_two_columns_item .article-first-title {
   width: 100%;
@@ -916,7 +916,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/Image2.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/Image2.png");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -927,7 +927,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab2"] .Project_management_two_columns_item--backend-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/Image2.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/Image2.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -980,7 +980,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image20.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image20.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -991,7 +991,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab2"] .Project_management_two_columns_item--backend-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image20.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image20.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1044,7 +1044,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image14.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image14.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1055,7 +1055,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab1"] .Project_management_two_columns_item--backend-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image14.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image14.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1109,7 +1109,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image30.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image30.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1120,7 +1120,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab1"] .Project_management_two_columns_item--backend-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image30.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image30.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1177,7 +1177,7 @@ header.main_page_background {
 .Project_or_Product {
   position: relative;
   background-color: #000;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image1.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image1.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1197,15 +1197,15 @@ header.main_page_background {
 }
 
 .Project_or_Product--bg699 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image699.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image699.svg");
 }
 
 .Project_or_Product--bg720 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image720.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image720.svg");
 }
 
 .Project_or_Product--uxui-main {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image10.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image10.svg");
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab1"] .Project_or_Product--uxui-main {
@@ -1221,7 +1221,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image10.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image10.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1232,7 +1232,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab1"] .Project_or_Product--uxui-main:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image10.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image10.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1272,11 +1272,11 @@ header.main_page_background {
 }
 
 .Project_or_Product--motion-main {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image720.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image720.svg");
 }
 
 .Project_or_Product--productdesign-main {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image1.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image1.svg");
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab3"] .Project_or_Product--productdesign-main {
@@ -1290,7 +1290,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image1.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image1.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1301,7 +1301,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab3"] .Project_or_Product--productdesign-main:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image1.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image1.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1405,7 +1405,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image1.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image1.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1416,7 +1416,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab1"] .Project_management_description_three > .Project_or_Product:first-child:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image1.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image1.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1502,39 +1502,39 @@ header.main_page_background {
 }
 
 .article-first {
-  background-image: url("/image/image701.svg");
+  background-image: url("../../image/image701.svg");
 }
 
 .article-first.article-first--698 {
-  background-image: url("/image/image698.svg");
+  background-image: url("../../image/image698.svg");
 }
 
 .article-first.article-first--715 {
-  background-image: url("/image/image715.svg");
+  background-image: url("../../image/image715.svg");
 }
 
 .article-first.article-first--uxui-first {
-  background-image: url("/image/image11.svg");
+  background-image: url("../../image/image11.svg");
 }
 
 .article-first.article-first--motion-1 {
-  background-image: url("/image/image715.svg");
+  background-image: url("../../image/image715.svg");
 }
 
 .article-second {
-  background-image: url("/image/image700.svg");
+  background-image: url("../../image/image700.svg");
 }
 
 .article-second.article-second--706 {
-  background-image: url("/image/image706.svg");
+  background-image: url("../../image/image706.svg");
 }
 
 .article-second.article-second--uxui-second {
-  background-image: url("/image/image12.svg");
+  background-image: url("../../image/image12.svg");
 }
 
 .article-second.article-second--motion-2 {
-  background-image: url("/image/image717.svg");
+  background-image: url("../../image/image717.svg");
 }
 
 .article-second--motion-2 {
@@ -1549,7 +1549,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image14.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image14.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1560,7 +1560,7 @@ header.main_page_background {
 }
 
 .article-second--motion-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image14.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image14.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1598,7 +1598,7 @@ header.main_page_background {
 }
 
 .article-second.article-second--717 {
-  background-image: url("/image/image717.svg");
+  background-image: url("../../image/image717.svg");
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab2"] .article-first--backend-1 {
@@ -1613,7 +1613,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image36.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image36.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1624,7 +1624,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab2"] .article-first--backend-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image36.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image36.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1672,7 +1672,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image25.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image25.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1683,7 +1683,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab1"] .article-first--backend-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image25.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image25.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1731,7 +1731,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image698.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image698.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1742,7 +1742,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab3"] .article-first--game-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image698.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image698.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1790,7 +1790,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image14.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image14.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1801,7 +1801,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab3"] .article-second--game-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image14.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image14.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1849,7 +1849,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image42.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image42.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1860,7 +1860,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab3"] .Project_or_Product--game-main:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image42.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image42.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1883,7 +1883,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image24.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image24.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1894,7 +1894,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab1"] .Project_or_Product--backend-main:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image24.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image24.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -1944,7 +1944,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image403.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image403.png");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -1955,7 +1955,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab2"] .Project_or_Product--backend-main:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image403.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image403.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2031,7 +2031,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image45.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image45.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2042,7 +2042,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab4"] .Project_or_Product--game-main:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image45.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image45.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2091,7 +2091,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image30.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image30.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2102,7 +2102,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab4"] .Project_management_two_columns_item--game-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image30.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image30.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2152,7 +2152,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image20.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image20.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2163,7 +2163,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab3"] .Project_management_two_columns_item--game-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image20.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image20.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2215,7 +2215,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image43.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image43.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2226,7 +2226,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab3"] .Project_management_two_columns_item--game-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image43.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image43.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2276,7 +2276,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image46.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image46.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2287,7 +2287,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab4"] .article-first--game-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image46.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image46.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2335,7 +2335,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image47.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image47.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2346,7 +2346,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab4"] .article-second--game-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image47.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image47.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2394,7 +2394,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image42.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image42.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2405,7 +2405,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab4"] .Project_management_two_columns_item--game-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image42.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image42.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2455,7 +2455,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image698.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image698.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2466,7 +2466,7 @@ header.main_page_background {
 }
 
 .article-second--productdesign-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image698.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image698.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2517,7 +2517,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image20.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image20.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2528,7 +2528,7 @@ header.main_page_background {
 }
 
 .article-first--productdesign-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image20.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image20.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2579,7 +2579,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/Image2.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/Image2.png");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2590,7 +2590,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab3"] .Project_management_two_columns_item--productdesign-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/Image2.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/Image2.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2642,7 +2642,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image706.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image706.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2653,7 +2653,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab3"] .Project_management_two_columns_item--productdesign-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image706.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image706.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2703,7 +2703,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image701.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image701.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -2714,7 +2714,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab2"] .Project_management_two_columns_item--motion-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image701.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image701.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -2903,59 +2903,59 @@ header.main_page_background {
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--project-1 {
-  background-image: url("/image/image704.svg");
+  background-image: url("../../image/image704.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--project-2 {
-  background-image: url("/image/image705.svg");
+  background-image: url("../../image/image705.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--product-1 {
-  background-image: url("/image/image7111.svg");
+  background-image: url("../../image/image7111.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--product-2 {
-  background-image: url("/image/image712.svg");
+  background-image: url("../../image/image712.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--uxui-1 {
-  background-image: url("/image/image15.svg");
+  background-image: url("../../image/image15.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--uxui-2 {
-  background-image: url("/image/image16.svg");
+  background-image: url("../../image/image16.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--motion-1 {
-  background-image: url("/image/image18.svg");
+  background-image: url("../../image/image18.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--motion-2 {
-  background-image: url("/image/image19.svg");
+  background-image: url("../../image/image19.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--productdesign-1 {
-  background-image: url("/image/image22.svg");
+  background-image: url("../../image/image22.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--productdesign-2 {
-  background-image: url("/image/image23.svg");
+  background-image: url("../../image/image23.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--backend-1 {
-  background-image: url("/image/image31.svg");
+  background-image: url("../../image/image31.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--backend-2 {
-  background-image: url("/image/image32.svg");
+  background-image: url("../../image/image32.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--teamlead-1 {
-  background-image: url("/image/image721.svg");
+  background-image: url("../../image/image721.svg");
 }
 
 .word_of_day_section__aside .word_of_day_side_card__thumb.word_of_day_side_card__thumb--teamlead-2 {
-  background-image: url("/image/image722.svg");
+  background-image: url("../../image/image722.svg");
 }
 
 .word_of_day_side_card__body {
@@ -3101,7 +3101,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image20.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image20.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3112,7 +3112,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab2"] .article-second--backend-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image20.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image20.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -3161,7 +3161,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image699.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image699.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3172,7 +3172,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab1"] .article-second--backend-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image699.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image699.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -3220,7 +3220,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image17.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image17.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3231,7 +3231,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab2"] .Project_or_Product--motion-main:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image17.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image17.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -3282,7 +3282,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image708.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image708.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3293,7 +3293,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab2"] .article-first--motion-1:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image708.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image708.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -3342,7 +3342,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image698.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image698.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3353,7 +3353,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab2"] .Project_management_two_columns_item--motion-2:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image698.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image698.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -3406,7 +3406,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image701.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image701.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3417,7 +3417,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab1"] .article-first--project-main:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image701.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image701.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -3466,7 +3466,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image700.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image700.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3477,7 +3477,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab1"] .article-second--project-charter:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image700.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image700.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -3526,7 +3526,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image702.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image702.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3537,7 +3537,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab1"] .Project_management_two_columns_item--kak-uspet:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image702.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image702.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -3590,7 +3590,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image708.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image708.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3601,7 +3601,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab1"] .Project_management_two_columns_item--708:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image708.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image708.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -3654,7 +3654,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image698.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image698.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3665,7 +3665,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab2"] .article-first--698:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image698.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image698.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -3714,7 +3714,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image706.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image706.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3725,7 +3725,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab2"] .article-second--706:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image706.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image706.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;
@@ -3773,7 +3773,7 @@ header.main_page_background {
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("/image/image699.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), url("../../image/image699.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -3784,7 +3784,7 @@ header.main_page_background {
 }
 
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab2"] .Project_or_Product--bg699:hover::before {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("/image/image699.svg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(#ff7f39, #ff7f39), url("../../image/image699.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
   background-size: cover, cover, cover;

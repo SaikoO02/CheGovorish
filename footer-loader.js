@@ -1,5 +1,5 @@
 function loadFooterHtml() {
-  const candidates = ['footer.html', '../footer.html', '/footer.html'];
+  const candidates = ['footer.html', '../footer.html', '../../footer.html', '../../../footer.html'];
 
   const tryNext = (i) =>
     fetch(candidates[i])
@@ -24,9 +24,7 @@ window.footerLoaded = loadFooterHtml()
 
     container.innerHTML = html;
     
-    let prefix = '';
-    if (loadedFrom.startsWith('../')) prefix = '../';
-    if (loadedFrom.startsWith('/')) prefix = '/';
+    const prefix = loadedFrom.slice(0, loadedFrom.length - 'footer.html'.length);
 
     container.querySelectorAll('[src]').forEach((el) => {
       const src = el.getAttribute('src');

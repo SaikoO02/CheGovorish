@@ -26,7 +26,7 @@ export default function ArticleReco({ currentTitle }) {
             <div className="article-reco__media">
               <div className="article-reco__time">
                 <span className="article-reco__time-text">{article.readTime}</span>
-                <img className="article-reco__time-icon" src="/image/ICONS2.svg" alt="" width="22" height="22" />
+                <img className="article-reco__time-icon" src="../../../image/ICONS2.svg" alt="" width="22" height="22" />
               </div>
             </div>
             <div className="article-reco__body">

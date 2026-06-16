@@ -12,8 +12,8 @@
       body.classList.toggle("theme-light", isLight);
       if (themeBtnImg) {
         themeBtnImg.src = isLight
-          ? "/image/moonstarssvgrepocom1.svg"
-          : "/image/sun2svgrepocom1.svg";
+          ? "../../../image/moonstarssvgrepocom1.svg"
+          : "../../../image/sun2svgrepocom1.svg";
       }
     }
 

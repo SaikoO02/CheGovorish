@@ -823,7 +823,7 @@ a {
   height: auto;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .main_page_background {
     position: relative;
     overflow: hidden;

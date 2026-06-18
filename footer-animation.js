@@ -1,6 +1,10 @@
 function initFooterAnimation() {
   const radius = 50;
 
+  if (window.matchMedia('(max-width: 600px)').matches) {
+    return;
+  }
+
   if (!window.footerLoaded) {
     return;
   }

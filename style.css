@@ -658,27 +658,22 @@ a {
   color: #000;
 }
 
-.word-day__arrow {
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  background-image: url("image/icon1.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  position: relative;
-}
-
 .word-day__button {
-  margin-top: 40px;
-  padding: 14px 40px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 650px;
+  margin: 40px auto 0;
+  padding: 5px 40px;
   border: none;
-  background: #cfcfcf;
+  color: #000;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "JetBrains Mono", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #C8C8C8;
   border-radius: 6px;
   cursor: pointer;
+  text-align: center;
 }
 
 .word-day__decor {
@@ -1019,7 +1014,7 @@ a {
   }
 
   .feature-item__title {
-    margin: 0 0 90px;
+    margin: 0 0 63px;
     font-size: 24px;
     letter-spacing: 0.08em;
   }
@@ -1060,10 +1055,6 @@ a {
   .word-day__slider {
     width: 100%;
     gap: 0;
-  }
-
-  .word-day__arrow {
-    display: none;
   }
 
   .word-day__card {
@@ -1110,8 +1101,11 @@ a {
   }
 
   .footer__content {
-    padding: 16px 20px;
-    align-items: flex-end;
+    padding: 24px 20px 32px;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px 42px;
   }
 
   .footer__left,
@@ -1120,12 +1114,32 @@ a {
     font-size: 18px;
   }
 
-  .footer__left {
-    max-width: 110px;
+  .footer__left,
+  .footer__center {
+    max-width: none;
   }
 
   .footer__right {
-    width: 48px;
+    flex: 0 0 100%;
+    width: auto;
+    justify-content: left;
+  }
+
+  .footer__right img {
+    width: 56px;
+    height: auto;
+  }
+
+  .footer-container path,
+  .footer path {
+    transition: none;
+    -webkit-transition: none;
+  }
+
+  .footer-container path:hover,
+  .footer path:hover {
+    transform: none;
+    -webkit-transform: none;
   }
 }
 

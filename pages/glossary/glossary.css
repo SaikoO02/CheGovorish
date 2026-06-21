@@ -7,6 +7,21 @@ body.page-glossary .main_page_background {
   background-image: none;
 }
 
+@media (max-width: 480px) {
+  body.page-glossary .main_page_background {
+    min-height: 0;
+  }
+
+  body.page-glossary .main_page_background::before {
+    display: none;
+  }
+
+  body.page-glossary .main_page_background .container {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
 .glossary {
   margin-top: 28px;
   margin-bottom: 90px;

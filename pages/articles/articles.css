@@ -7,6 +7,21 @@ body.page-articles .main_page_background {
   background-image: none;
 }
 
+@media (max-width: 480px) {
+  body.page-articles .main_page_background {
+    min-height: 0;
+  }
+
+  body.page-articles .main_page_background::before {
+    display: none;
+  }
+
+  body.page-articles .main_page_background .container {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
 .articles-page {
   margin-top: 28px;
   margin-bottom: 90px;
@@ -83,8 +98,22 @@ body.page-articles .main_page_background {
     font-size: 40px;
   }
 
+  .articles-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+
+  .articles-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
   .articles-tabs__btn {
-    font-size: 18px;
-    padding: 8px 12px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    white-space: nowrap;
   }
 }

@@ -78,7 +78,7 @@ console.log("JS подключен");
       map.addEventListener("click", (e) => {
         const target = e.target.closest("[data-panel]");
         if (!target) return;
-        window.location.href = "/pages/themes/?panel=" + target.dataset.panel;
+        window.location.href = "pages/themes/?panel=" + target.dataset.panel;
       });
     }
 
@@ -93,9 +93,9 @@ console.log("JS подключен");
       .forEach((btn) => {
         const text = btn.textContent.trim();
         let href = null;
-        if (text.startsWith("Все статьи")) href = "/pages/articles/";
-        else if (text.startsWith("Все квизы")) href = "/pages/quiz/";
-        else if (text.startsWith("Глоссарий")) href = "/pages/glossary/";
+        if (text.startsWith("Все статьи")) href = "pages/articles/";
+        else if (text.startsWith("Все квизы")) href = "pages/quiz/";
+        else if (text.startsWith("Глоссарий")) href = "pages/glossary/";
         if (!href) return;
         btn.addEventListener("click", () => {
           window.location.href = href;

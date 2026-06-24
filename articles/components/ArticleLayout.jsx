@@ -91,7 +91,7 @@ export default function ArticleLayout({
           </div>
 
           <nav className="article-page__bottom-nav" aria-label="Навигация по статье">
-            <a href="/pages/themes/" className="article-page__nav-icon article-page__nav-back" aria-label="К списку тем" onClick={handleBack}>
+            <a href="../../../pages/themes/" className="article-page__nav-icon article-page__nav-back" aria-label="К списку тем" onClick={handleBack}>
               <img className="article-page__nav-img" src="../../../image/ICONS3.svg" alt="" width="43" height="43" />
             </a>
             <div className="article-page__bottom-nav-right">

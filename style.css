@@ -428,6 +428,7 @@ a {
   background-position: left top;
   padding: 60px 18px;
   min-height: 190px;
+  cursor: pointer;
 }
 
 .feature-item_2 {
@@ -519,6 +520,7 @@ a {
   position: absolute;
   font-size: 36px;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .title.tech {
@@ -529,7 +531,7 @@ a {
   right: 1px;
   top: 64%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .title.management {
@@ -543,8 +545,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .item.right {
@@ -558,8 +560,8 @@ a {
 
 .item.left .line {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   width: auto;
   margin-left: 0;
 }
@@ -572,6 +574,15 @@ a {
   white-space: nowrap;
   font-family: "JetBrains Mono", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   font-weight: 300;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .label:hover {
+    background: #FFB48B;
+    border-color: #FFB48B;
+    color: #000;
+  }
 }
 
 .sub {
@@ -587,7 +598,7 @@ a {
   margin-right: 10px;
 }
 
-/* соединительная линия */
+
 .line {
   width: 39px;
   height: 2px;
@@ -612,11 +623,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -682,8 +693,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .word-day__decor-img {

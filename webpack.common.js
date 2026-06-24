@@ -19,6 +19,7 @@ module.exports = {
     'articles/menedzhment/produkt/article-razbor-prd': './articles/menedzhment/produkt/article-razbor-prd.jsx',
     'articles/menedzhment/produkt/article-b2b-vs-b2c': './articles/menedzhment/produkt/article-b2b-vs-b2c.jsx',
     'articles/menedzhment/produkt/article-portfolio-pm': './articles/menedzhment/produkt/article-portfolio-pm.jsx',
+    'articles/menedzhment/produkt/article-google-stadia': './articles/menedzhment/produkt/article-google-stadia.jsx',
     'articles/tekhnicheskoe/razrabotka/article-sovremennyy-react': './articles/tekhnicheskoe/razrabotka/article-sovremennyy-react.jsx',
     'articles/tvorcheskoe/produkt-dizayn/article-asinkhronnost-backend': './articles/tvorcheskoe/produkt-dizayn/article-asinkhronnost-backend.jsx',
     'articles/tekhnicheskoe/razrabotka/article-oshibki-design-system': './articles/tekhnicheskoe/razrabotka/article-oshibki-design-system.jsx',

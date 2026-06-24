@@ -4,6 +4,7 @@ const THEME_KEY = 'articleTheme'
 
 export default function ArticleHeader() {
   const [theme, setTheme] = useState('dark')
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     try {
@@ -36,12 +37,19 @@ export default function ArticleHeader() {
               />
             </button>
           </div>
-          <nav className="menu" aria-label="Main menu">
-            <a className="menu__item" href="/pages/themes/">темы</a>
-            <a className="menu__item" href="/pages/glossary/">глоссарий</a>
-            <a className="menu__item" href="/pages/articles/">статьи</a>
-            <a className="menu__item" href="/pages/quiz/">квизы</a>
-            <a className="menu__item" href="#">о медиа</a>
+          <button
+            className="menu-burger"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen(o => !o)}
+          ></button>
+          <nav className={`menu${menuOpen ? ' is-open' : ''}`} aria-label="Main menu">
+            <a className="menu__item" href="/pages/themes/" onClick={() => setMenuOpen(false)}>темы</a>
+            <a className="menu__item" href="/pages/glossary/" onClick={() => setMenuOpen(false)}>глоссарий</a>
+            <a className="menu__item" href="/pages/articles/" onClick={() => setMenuOpen(false)}>статьи</a>
+            <a className="menu__item" href="/pages/quiz/" onClick={() => setMenuOpen(false)}>квизы</a>
+            <a className="menu__item" href="#" onClick={() => setMenuOpen(false)}>о медиа</a>
           </nav>
         </div>
       </div>

@@ -73,6 +73,35 @@ console.log("JS подключен");
       });
     }
 
+    const map = document.querySelector(".map");
+    if (map) {
+      map.addEventListener("click", (e) => {
+        const target = e.target.closest("[data-panel]");
+        if (!target) return;
+        window.location.href = "/pages/themes/?panel=" + target.dataset.panel;
+      });
+    }
+
+    document.querySelectorAll("[data-href]").forEach((card) => {
+      card.addEventListener("click", () => {
+        window.location.href = card.dataset.href;
+      });
+    });
+
+    document
+      .querySelectorAll("button.Project_management_description_button")
+      .forEach((btn) => {
+        const text = btn.textContent.trim();
+        let href = null;
+        if (text.startsWith("Все статьи")) href = "/pages/articles/";
+        else if (text.startsWith("Все квизы")) href = "/pages/quiz/";
+        else if (text.startsWith("Глоссарий")) href = "/pages/glossary/";
+        if (!href) return;
+        btn.addEventListener("click", () => {
+          window.location.href = href;
+        });
+      });
+
     const isThemesPage =
       window.location.href.includes("themes.html") ||
       window.location.href.includes("/pages/themes/");
@@ -99,7 +128,6 @@ console.log("JS подключен");
       items[0].classList.add("open");
     }
 
-    /** Первая вкладка активна в каждом блоке (панели + класс .active) */
     items.forEach((item) => {
       const buttons = item.querySelectorAll(".tab-btn");
       const panels = item.querySelectorAll(".tab-panel");
@@ -111,6 +139,35 @@ console.log("JS подключен");
         p.classList.toggle("active", p.dataset.panel === first.dataset.panel)
       );
     });
+
+    if (isThemesPage) {
+      const requestedPanel = new URLSearchParams(window.location.search).get(
+        "panel"
+      );
+      if (requestedPanel) {
+        const themeMatch = requestedPanel.match(/^theme\d/);
+        const targetItem = themeMatch
+          ? container.querySelector(".accordion-item." + themeMatch[0])
+          : null;
+        if (targetItem) {
+          items.forEach((item) =>
+            item.classList.toggle("open", item === targetItem)
+          );
+          const targetBtn = targetItem.querySelector(
+            '.tab-btn[data-panel="' + requestedPanel + '"]'
+          );
+          if (targetBtn) {
+            const buttons = targetItem.querySelectorAll(".tab-btn");
+            const panels = targetItem.querySelectorAll(".tab-panel");
+            buttons.forEach((b) => b.classList.toggle("active", b === targetBtn));
+            panels.forEach((p) =>
+              p.classList.toggle("active", p.dataset.panel === requestedPanel)
+            );
+          }
+          targetItem.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    }
 
     container.addEventListener("click", function (e) {
       const tabBtn = e.target.closest(".tab-btn");
@@ -138,8 +195,6 @@ console.log("JS подключен");
 
       console.log("Клик по заголовку, текущий блок:", currentItem);
 
-      // Всегда ровно одна открытая секция: клик по заголовку только переключает на неё,
-      // нельзя «закрыть всё» повторным кликом по уже открытому блоку
       items.forEach((item) => {
         if (item !== currentItem) {
           item.classList.remove("open");
@@ -149,9 +204,6 @@ console.log("JS подключен");
       console.log("Открыт блок:", currentItem);
     });
 
-    // На карточках без собственного <a> (Project_or_Product, часть
-    // Project_management_two_columns_item) клик по всему блоку должен
-    // открывать статью — переходим по ссылке внутри карточки.
     document
       .querySelectorAll(".Project_or_Product, .Project_management_two_columns_item")
       .forEach((card) => {
@@ -164,9 +216,6 @@ console.log("JS подключен");
         });
       });
 
-    // "Замораживаем" исходный background-image у ::before карточек тем —
-    // на планшете/мобильном (см. themes.css) он принудительно используется
-    // и в hover-состоянии, чтобы картинка не подменялась/не пропадала.
     document
       .querySelectorAll(
         '[class*="Project_management_two_columns_item--"], [class*="article-first--"], [class*="article-second--"], [class*="Project_or_Product--"]'

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Стили для страницы "Темы" */
+
 .themes-block {
   padding: 40px 0 80px;
 }
@@ -62,7 +62,6 @@
   margin: 0;
 }
 
-/* Основные стили аккордеона */
 .accordion {
   max-width: 1400px;
   margin: 0 auto;
@@ -77,11 +76,6 @@
   overflow: visible;
 }
 
-/* Вырез-«уголок» — картинка (готовая, с цветом и прозрачным вырезом)
-   в естественных пропорциях, без растяжения и повтора. Свой
-   background-color карточке тут НЕ задаём — иначе он совпадает с цветом
-   самой картинки и вырез становится не виден; ::after докрашивает то,
-   что ниже картинки. */
 .accordion-item::before {
   content: "";
   position: absolute;
@@ -107,9 +101,6 @@
   pointer-events: none;
 }
 
-/* В закрытом виде карточка сразу переходит в следующую (перекрытие
-   margin-top), скруглённые нижние углы там не нужны — только когда
-   секция открыта. */
 .accordion-item.open::after {
   border-radius: 0 0 32px 32px;
 }
@@ -180,7 +171,6 @@
   font-weight: 300;
 }
 
-
 .accordion-header:hover {
   background-color: transparent;
 }
@@ -200,7 +190,6 @@
   padding-bottom: 200px;
 }
 
-/* Заглушки и оформление детального контента */
 .content-detailed h2 {
   font-size: 28px;
   margin-top: 0;
@@ -227,7 +216,6 @@
   cursor: pointer;
 }
 
-/* Цвет чипов по каждому разделу */
 .accordion-item.theme1 .content-placeholder .tab-btn {
   border-color: #000;
   background: rgba(200, 200, 200, 0.55);
@@ -243,7 +231,6 @@
   background: rgba(244, 245, 248, 0.85);
 }
 
-/* Активный таб */
 .accordion-item.theme1 .content-placeholder .tab-btn.active,
 .accordion-item.theme3 .content-placeholder .tab-btn.active {
   background: #FF7F39;
@@ -297,7 +284,6 @@
   min-width: 0;
 }
 
-/* Контент под табами не виден, пока блок аккордеона закрыт */
 .accordion-item:not(.open) .tab-panels {
   display: none;
 }
@@ -403,7 +389,6 @@
   margin-top: 5px;
 }
 
-/* Заглушка для пустых блоков */
 .placeholder-block {
   background: #eee;
   padding: 40px;
@@ -507,13 +492,26 @@ header.main_page_background {
   box-sizing: border-box;
 }
 
+@media (min-width: 1025px) {
+  .Project_management_description_button:hover {
+    background: #FF7F39 !important;
+    color: #ffff !important;
+    border-color: #FF7F39 !important;
+  }
+
+  .accordion-item.theme2 .Project_management_description_button:hover {
+    background: #FFB48B !important;
+    color: #000 !important;
+    border-color: #FFB48B !important;
+  }
+}
+
 .accordion-item.theme2 .Project_management_description_button {
   background: #FF7F39;
   color: #000000;
   border-color: #000000;
 }
 
-/* Только ТЕХНИЧЕСКОЕ IT → Backend/frontend-разработка */
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab1"] .Project_management_description_button {
   background: #C8C8C8;
   color: #000000;
@@ -597,9 +595,7 @@ header.main_page_background {
     max-width: 100%;
   }
 
-  /* Заголовок и кнопка — в одну строку (заголовок слева, кнопка справа),
-     карточки/контент — ниже. Чтобы "СЛОВО ДНЯ" не рвалось на две строки
-     рядом с кнопкой, уменьшаем шрифт заголовка вместо переноса кнопки. */
+  
   .Project_management_description_two {
     flex-direction: row;
     align-items: center;
@@ -652,7 +648,6 @@ header.main_page_background {
   background-image: url("../../image/image703.svg");
 }
 
-/* У творческой темы (ТВОРЧЕСКОЕ IT) свои фоновые картинки */
 .accordion-item.theme2 .Project_management_two_columns_item--uxui-col1 {
   background-image: url("../../image/image720.svg");
 }
@@ -660,7 +655,6 @@ header.main_page_background {
   background-image: url("../../image/image721.svg");
 }
 
-/* Дизайн для ошибок (theme2-tab1) — blend-mode hover */
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab1"] .Project_management_two_columns_item--uxui-col1 {
   position: relative;
   overflow: hidden;
@@ -722,7 +716,6 @@ header.main_page_background {
   opacity: 1;
 }
 
-/* UX для международных продуктов (theme2-tab1) — blend-mode hover */
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab1"] .article-second--uxui-second {
   position: relative;
   overflow: hidden;
@@ -1134,7 +1127,6 @@ header.main_page_background {
   opacity: 1;
 }
 
-/* Современный React (theme1-tab1) — blend-mode подход */
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab1"] .Project_management_two_columns_item--backend-1 {
   position: relative;
   overflow: hidden;
@@ -1391,7 +1383,7 @@ header.main_page_background {
 .Project_or_Product_intro {
   flex: 1;
   min-width: 0;
-  /* Шире, чтобы длинные заголовки в 48px + uppercase (напр. «Проджект или Продукт?») влезали в одну строку */
+  
   max-width: min(700px, 100%);
 }
 
@@ -1431,7 +1423,6 @@ header.main_page_background {
   min-width: 0;
 }
 
-/* Проджект менеджмент: фон только в ::before (без ::after — иначе перекрывает кнопку) */
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab1"] .Project_management_description_three > .Project_or_Product:first-child {
   overflow: visible;
   background-image: none;
@@ -1466,8 +1457,6 @@ header.main_page_background {
   z-index: 1;
 }
 
-/* Текст слева внизу — напротив оранжевой кнопки; кнопка появляется при наведении на карточку.
-   Не ставить pointer-events: none на кнопке — иначе события уходят сквозь неё и :hover с карточки «теряется». */
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab1"] .Project_management_description_three > .Project_or_Product:first-child .Project_or_Product_CTA {
   position: relative;
   z-index: 2;
@@ -2887,12 +2876,10 @@ header.main_page_background {
   box-sizing: border-box;
 }
 
-/* Только карточка "UX/UI — 1" */
 .word_of_day_side_card.word_of_day_side_card--uxui-1 {
   height: 187px;
 }
 
-/* Продуктовый дизайн: только эти две карточки серые */
 .word_of_day_side_card.word_of_day_side_card--productdesign-1,
 .word_of_day_side_card.word_of_day_side_card--productdesign-2 {
   background: #C8C8C8;
@@ -2903,25 +2890,21 @@ header.main_page_background {
   background: #C8C8C8;
 }
 
-/* Backend/frontend-разработка: белый фон только у этих двух карточек */
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab1"] .word_of_day_side_card.word_of_day_side_card--backend-1,
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab1"] .word_of_day_side_card.word_of_day_side_card--backend-2 {
   background: #ffffff;
 }
 
-/* DevOps-инженерия: белый фон только у этих двух карточек */
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab2"] .word_of_day_side_card.word_of_day_side_card--backend-1,
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab2"] .word_of_day_side_card.word_of_day_side_card--backend-2 {
   background: #ffffff;
 }
 
-/* Гейм-разработка: белый фон только у этих двух карточек */
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab3"] .word_of_day_side_card.word_of_day_side_card--game-1,
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab3"] .word_of_day_side_card.word_of_day_side_card--game-2 {
   background: #ffffff;
 }
 
-/* Тестирование: белый фон только у этих двух карточек */
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab4"] .word_of_day_side_card.word_of_day_side_card--game-1,
 .accordion-item.theme1 .tab-panel[data-panel="theme1-tab4"] .word_of_day_side_card.word_of_day_side_card--game-2 {
   background: #ffffff;
@@ -3046,12 +3029,10 @@ header.main_page_background {
   box-sizing: border-box;
 }
 
-/* Только UX/UI (theme2-tab1): белый фон у "слово дня" */
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab1"] .word_of_day_glossary_card {
   background: #ffffff;
 }
 
-/* Продуктовый дизайн: белый фон у "слово дня" */
 .accordion-item.theme2 .tab-panel[data-panel="theme2-tab3"] .word_of_day_glossary_card--productdesign {
   background: #ffffff;
 }
@@ -3100,9 +3081,7 @@ header.main_page_background {
   font-size: 18px;
   line-height: 1.45;
   width: 100%;
-  /* В тексте есть цепочки слов через неразрывный пробел (\xa0) — без этого
-     браузер не может перенести строку внутри них и текст вылезает за
-     карточку на узких колонках. */
+  
   overflow-wrap: anywhere;
 }
 .word_of_day_glossary_card__meaning p {
@@ -3867,8 +3846,7 @@ header.main_page_background {
 }
 
 @media (max-width: 1024px) {
-  /* Небольшой overlap нужен, чтобы скруглённый левый верх следующей
-     карточки не "просвечивал" чёрным фоном страницы на стыке. */
+  
   .accordion-item.theme2,
   .accordion-item.theme3 {
     margin-top: -160px !important;
@@ -3906,8 +3884,7 @@ header.main_page_background {
     width: 100%;
   }
 
-  /* Чипы тем (Backend/frontend-разработка и т.п.) — в одну строку со
-     свайпом, как на странице статей/квизов, без переноса. */
+  
   .content-placeholder {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -3958,7 +3935,6 @@ header.main_page_background {
     height: auto;
     min-height: 220px;
   }
-
 
   .Project_management_two_columns {
     flex-direction: column;
@@ -4028,10 +4004,6 @@ header.main_page_background {
   }
 }
 
-/* Project_or_Product (873px) + article_Project_or_Product (427px) + gap
-   нуждаются в ~1320px, чтобы стоять в ряд. На ширинах 1025–1320px (между
-   десктопом и планшетным адаптивом) десктопная раскладка уже не влезает,
-   и вторая колонка обрезается/налезает — переносим её в столбец раньше. */
 @media (max-width: 1320px) and (min-width: 1025px) {
   .Project_management_description_three {
     flex-direction: column;
@@ -4068,15 +4040,11 @@ header.main_page_background {
 }
 
 @media (max-width: 920px) {
-  /* В один столбец оба заголовка ("КВИЗЫ"/"СЛОВО ДНЯ") идут раньше обеих
-     колонок контента — "Глоссарий >>" оказывается далеко от своей же
-     оранжевой карточки. Переупорядочиваем: заголовок КВИЗЫ → карточки
-     квизов → заголовок СЛОВО ДНЯ → карточка слова дня. */
+  
   .word_of_day_combo {
     display: flex;
     flex-direction: column;
-    /* .Project_management_description_two_row ниже становится display:contents
-       (для переупорядочивания) и теряет свой margin-top — переносим его сюда. */
+    
     margin-top: 20px;
   }
 
@@ -4103,22 +4071,13 @@ header.main_page_background {
   }
 }
 
-/* На странице "Темы" header — просто узкая навигация, а не большой hero,
-   как на главной. Декоративный повёрнутый фон (со style.css, ::before на
-   main_page_background) и min-height:100vh там не нужны — из-за них шапка
-   на мобильном растягивалась на весь экран. */
 @media (max-width: 480px) {
   body.page-themes .main_page_background {
     background-image: none;
     min-height: 0;
-    /* overflow:hidden был нужен только чтобы обрезать декоративный фон —
-       без него он обрезает fixed-меню бургера, открытое на весь экран. */
+    
     overflow: visible;
-    /* На главной шапка высокая (min-height:100vh), поэтому .accordion
-       (как и любой контент ниже) физически не пересекается с открытым
-       fixed-меню. Здесь шапка низкая — без z-index .accordion (как
-       более поздний элемент в DOM с тем же auto-уровнем стека) рисуется
-       поверх вложенного fixed-меню, хотя у него z-index:1000. */
+    
     position: relative;
     z-index: 1002;
   }

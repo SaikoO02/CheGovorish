@@ -148,5 +148,34 @@ console.log("JS подключен");
       currentItem.classList.add("open");
       console.log("Открыт блок:", currentItem);
     });
+
+    // На карточках без собственного <a> (Project_or_Product, часть
+    // Project_management_two_columns_item) клик по всему блоку должен
+    // открывать статью — переходим по ссылке внутри карточки.
+    document
+      .querySelectorAll(".Project_or_Product, .Project_management_two_columns_item")
+      .forEach((card) => {
+        if (card.tagName === "A") return;
+        const link = card.querySelector("a[href]");
+        if (!link) return;
+        card.addEventListener("click", (e) => {
+          if (e.target.closest("a")) return;
+          window.location.href = link.href;
+        });
+      });
+
+    // "Замораживаем" исходный background-image у ::before карточек тем —
+    // на планшете/мобильном (см. themes.css) он принудительно используется
+    // и в hover-состоянии, чтобы картинка не подменялась/не пропадала.
+    document
+      .querySelectorAll(
+        '[class*="Project_management_two_columns_item--"], [class*="article-first--"], [class*="article-second--"], [class*="Project_or_Product--"]'
+      )
+      .forEach((card) => {
+        const bg = getComputedStyle(card, "::before").backgroundImage;
+        if (!bg || bg === "none") return;
+        card.style.setProperty("--frozen-before-bg", bg);
+        card.setAttribute("data-frozen-bg", "");
+      });
   });
 })();

@@ -77,15 +77,41 @@
   overflow: visible;
 }
 
+/* Вырез-«уголок» — картинка (готовая, с цветом и прозрачным вырезом)
+   в естественных пропорциях, без растяжения и повтора. Свой
+   background-color карточке тут НЕ задаём — иначе он совпадает с цветом
+   самой картинки и вырез становится не виден; ::after докрашивает то,
+   что ниже картинки. */
 .accordion-item::before {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 219px;
   z-index: 0;
   pointer-events: none;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: top;
   background-size: 100% auto;
+}
+
+.accordion-item::after {
+  content: "";
+  position: absolute;
+  top: 219px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* В закрытом виде карточка сразу переходит в следующую (перекрытие
+   margin-top), скруглённые нижние углы там не нужны — только когда
+   секция открыта. */
+.accordion-item.open::after {
+  border-radius: 0 0 32px 32px;
 }
 
 .accordion-item.theme1 {
@@ -93,25 +119,37 @@
 }
 
 .accordion-item.theme1::before {
-  background-image: url("../../image/Tema1.svg");
+  background-image: url("../../image/2Union-theme1.png");
+}
+
+.accordion-item.theme1::after {
+  background-color: #C8C8C8;
 }
 
 .accordion-item.theme2 {
   z-index: 2;
-  margin-top: -120px;
+  margin-top: -160px;
 }
 
 .accordion-item.theme2::before {
-  background-image: url("../../image/Tema2.svg");
+  background-image: url("../../image/2Union-theme2.png");
+}
+
+.accordion-item.theme2::after {
+  background-color: #FF7F39;
 }
 
 .accordion-item.theme3 {
   z-index: 3;
-  margin-top: -120px;
+  margin-top: -160px;
 }
 
 .accordion-item.theme3::before {
-  background-image: url("../../image/Tema3.svg");
+  background-image: url("../../image/2Union-theme3.png");
+}
+
+.accordion-item.theme3::after {
+  background-color: #F4F5F8;
 }
 
 .accordion-item:not(.open) {
@@ -123,16 +161,10 @@
   pointer-events: auto;
 }
 
-.accordion-item.theme1.open + .accordion-item.theme2 {
-  margin-top: -400px;
-}
-
-.accordion-item.theme2.open + .accordion-item.theme3 {
-  margin-top: -380px;
-}
-
+.accordion-item.theme1.open + .accordion-item.theme2,
+.accordion-item.theme2.open + .accordion-item.theme3,
 .accordion-item.theme1.open ~ .accordion-item.theme3 {
-  margin-top: -120px;
+  margin-top: -160px;
 }
 
 .accordion-header {
@@ -148,28 +180,22 @@
   font-weight: 300;
 }
 
+
 .accordion-header:hover {
   background-color: transparent;
 }
 
 .accordion-content {
   display: block;
-  padding: 0 28px 150px;
+  padding: 0 28px 200px;
   background: transparent;
   position: relative;
   z-index: 1;
   color: #000;
 }
 
-.accordion-item.theme1.open .accordion-content {
-  /* Открываем на высоту “как у svg” (масштаб зависит от ширины контейнера) */
-  padding-bottom: 550px;
-}
-
-.accordion-item.theme2.open .accordion-content {
-  padding-bottom: 400px;
-}
-
+.accordion-item.theme1.open .accordion-content,
+.accordion-item.theme2.open .accordion-content,
 .accordion-item.theme3.open .accordion-content {
   padding-bottom: 200px;
 }
@@ -416,7 +442,7 @@ header.main_page_background {
 }
 
 .Project_management_description_Title {
-  font-size: 40px;
+  font-size: 32px;
   font-family: "Inter Tight", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   text-transform: uppercase;
 }
@@ -559,7 +585,7 @@ header.main_page_background {
   gap: 40px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
   .Project_management_description_two_row {
     flex-direction: column;
     align-items: stretch;
@@ -569,6 +595,18 @@ header.main_page_background {
   .Project_management_description_two_row .Project_management_description_two:nth-child(2) {
     width: 100%;
     max-width: 100%;
+  }
+
+  /* Заголовок и кнопка — в одну строку (заголовок слева, кнопка справа),
+     карточки/контент — ниже. Чтобы "СЛОВО ДНЯ" не рвалось на две строки
+     рядом с кнопкой, уменьшаем шрифт заголовка вместо переноса кнопки. */
+  .Project_management_description_two {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .Project_management_description_Title {
+    font-size: 28px;
   }
 }
 .Project_management_two_columns {
@@ -3061,6 +3099,11 @@ header.main_page_background {
 .word_of_day_glossary_card__meaning {
   font-size: 18px;
   line-height: 1.45;
+  width: 100%;
+  /* В тексте есть цепочки слов через неразрывный пробел (\xa0) — без этого
+     браузер не может перенести строку внутри них и текст вылезает за
+     карточку на узких колонках. */
+  overflow-wrap: anywhere;
 }
 .word_of_day_glossary_card__meaning p {
   margin: 0 0 8px;
@@ -3073,7 +3116,7 @@ header.main_page_background {
   margin-bottom: 4px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
   .word_of_day_section {
     flex-direction: column;
   }
@@ -3821,4 +3864,274 @@ header.main_page_background {
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab2"] .Project_or_Product--bg699:hover .Project_or_Product_CTA,
 .accordion-item.theme3 .tab-panel[data-panel="theme3-tab2"] .Project_or_Product--bg699:focus-within .Project_or_Product_CTA {
   opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  /* Небольшой overlap нужен, чтобы скруглённый левый верх следующей
+     карточки не "просвечивал" чёрным фоном страницы на стыке. */
+  .accordion-item.theme2,
+  .accordion-item.theme3 {
+    margin-top: -160px !important;
+  }
+
+  .accordion-item.theme1.open + .accordion-item.theme2,
+  .accordion-item.theme2.open + .accordion-item.theme3,
+  .accordion-item.theme1.open ~ .accordion-item.theme3 {
+    margin-top: -160px !important;
+  }
+
+  .accordion-header {
+    font-size: 32px;
+  }
+
+  .accordion-item::before {
+    height: 120px;
+  }
+
+  .accordion-item::after {
+    top: 108px;
+  }
+
+  .accordion-content {
+    padding: 0 24px 200px;
+  }
+
+  .Project_management_description {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 16px;
+  }
+
+  .Project_management_description_Text {
+    width: 100%;
+  }
+
+  /* Чипы тем (Backend/frontend-разработка и т.п.) — в одну строку со
+     свайпом, как на странице статей/квизов, без переноса. */
+  .content-placeholder {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    margin: 0 -24px;
+    padding: 0 24px;
+  }
+
+  .content-placeholder::-webkit-scrollbar {
+    display: none;
+  }
+
+  .content-placeholder .tab-btn {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    white-space: nowrap;
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  [class$="_CTA"] {
+    opacity: 1 !important;
+  }
+
+  .Project_management_description_three {
+    flex-direction: column;
+  }
+
+  .Project_or_Product {
+    width: 100%;
+    min-height: 0;
+  }
+
+  .Project_or_Product_Title {
+    font-size: 32px;
+  }
+
+  .article_Project_or_Product {
+    width: 100%;
+  }
+
+  .article_Project_or_Product .article-first,
+  .article_Project_or_Product .article-second,
+  .article-first,
+  .article-second {
+    width: 100%;
+    height: auto;
+    min-height: 220px;
+  }
+
+
+  .Project_management_two_columns {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .Project_management_two_columns_item,
+  .Project_management_two_columns_item:first-child,
+  .Project_management_two_columns_item:nth-child(2) {
+    width: 100%;
+    height: auto;
+    min-height: 220px;
+  }
+
+  .word_of_day_side_card {
+    height: auto;
+    min-height: 140px;
+  }
+
+  .word_of_day_side_card__thumb {
+    flex: 0 0 120px;
+    width: 120px;
+  }
+}
+
+@media (min-width: 921px) and (max-width: 1320px) {
+  .Project_management_description_two_row {
+    flex-wrap: nowrap;
+  }
+
+  .Project_management_description_two_row .Project_management_description_two:first-child,
+  .Project_management_description_two_row .Project_management_description_two:nth-child(2) {
+    width: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+
+  .word_of_day_section {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .word_of_day_section__aside,
+  .word_of_day_section__main {
+    width: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  [data-frozen-bg]::before {
+    background-image: var(--frozen-before-bg) !important;
+  }
+
+  .article-cta-btn,
+  [class$="_CTA"] {
+    display: none !important;
+  }
+
+  .Project_or_Product,
+  [class*="Project_management_two_columns_item--"] {
+    cursor: pointer;
+  }
+
+  .image_triangles {
+    display: none;
+  }
+}
+
+/* Project_or_Product (873px) + article_Project_or_Product (427px) + gap
+   нуждаются в ~1320px, чтобы стоять в ряд. На ширинах 1025–1320px (между
+   десктопом и планшетным адаптивом) десктопная раскладка уже не влезает,
+   и вторая колонка обрезается/налезает — переносим её в столбец раньше. */
+@media (max-width: 1320px) and (min-width: 1025px) {
+  .Project_management_description_three {
+    flex-direction: column;
+  }
+
+  .Project_or_Product {
+    width: 100%;
+    min-height: 0;
+  }
+
+  .article_Project_or_Product {
+    width: 100%;
+  }
+
+  .article_Project_or_Product .article-first,
+  .article_Project_or_Product .article-second {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+  }
+
+  .Project_management_two_columns {
+    flex-direction: column;
+  }
+
+  .Project_management_two_columns_item,
+  .Project_management_two_columns_item:first-child,
+  .Project_management_two_columns_item:nth-child(2) {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+  }
+
+}
+
+@media (max-width: 920px) {
+  /* В один столбец оба заголовка ("КВИЗЫ"/"СЛОВО ДНЯ") идут раньше обеих
+     колонок контента — "Глоссарий >>" оказывается далеко от своей же
+     оранжевой карточки. Переупорядочиваем: заголовок КВИЗЫ → карточки
+     квизов → заголовок СЛОВО ДНЯ → карточка слова дня. */
+  .word_of_day_combo {
+    display: flex;
+    flex-direction: column;
+    /* .Project_management_description_two_row ниже становится display:contents
+       (для переупорядочивания) и теряет свой margin-top — переносим его сюда. */
+    margin-top: 20px;
+  }
+
+  .word_of_day_combo .Project_management_description_two_row,
+  .word_of_day_combo .word_of_day_section {
+    display: contents;
+  }
+
+  .word_of_day_combo .Project_management_description_two_row .Project_management_description_two:first-child {
+    order: 1;
+  }
+
+  .word_of_day_combo .word_of_day_section__aside {
+    order: 2;
+  }
+
+  .word_of_day_combo .Project_management_description_two_row .Project_management_description_two:nth-child(2) {
+    order: 3;
+    margin-top: 20px;
+  }
+
+  .word_of_day_combo .word_of_day_section__main {
+    order: 4;
+  }
+}
+
+/* На странице "Темы" header — просто узкая навигация, а не большой hero,
+   как на главной. Декоративный повёрнутый фон (со style.css, ::before на
+   main_page_background) и min-height:100vh там не нужны — из-за них шапка
+   на мобильном растягивалась на весь экран. */
+@media (max-width: 480px) {
+  body.page-themes .main_page_background {
+    background-image: none;
+    min-height: 0;
+    /* overflow:hidden был нужен только чтобы обрезать декоративный фон —
+       без него он обрезает fixed-меню бургера, открытое на весь экран. */
+    overflow: visible;
+    /* На главной шапка высокая (min-height:100vh), поэтому .accordion
+       (как и любой контент ниже) физически не пересекается с открытым
+       fixed-меню. Здесь шапка низкая — без z-index .accordion (как
+       более поздний элемент в DOM с тем же auto-уровнем стека) рисуется
+       поверх вложенного fixed-меню, хотя у него z-index:1000. */
+    position: relative;
+    z-index: 1002;
+  }
+
+  body.page-themes .main_page_background::before {
+    display: none;
+  }
+
+  body.page-themes .main_page_background .container {
+    padding-bottom: 18px;
+  }
+
+  body.page-themes .accordion {
+    margin-top: 90px;
+  }
 }

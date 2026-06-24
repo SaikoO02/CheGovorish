@@ -10,6 +10,7 @@ body.page-glossary .main_page_background {
 @media (max-width: 480px) {
   body.page-glossary .main_page_background {
     min-height: 0;
+    overflow: visible;
   }
 
   body.page-glossary .main_page_background::before {

@@ -13,7 +13,10 @@ module.exports = {
     'pages/quiz/quiz-run': './pages/quiz/quiz-run.js',
     'pages/quiz/quiz-engine': './pages/quiz/quiz-engine.js',
     'quizzes/tekhnicheskoe/quiz-aytishnyy-termin': './quizzes/tekhnicheskoe/quiz-aytishnyy-termin.js',
-    'quizzes/tvorcheskoe/quiz-komponenty-v-figma': './quizzes/tvorcheskoe/quiz-komponenty-v-figma.js',
+    'quizzes/tekhnicheskoe/quiz-komponenty-v-figma': './quizzes/tekhnicheskoe/quiz-komponenty-v-figma.js',
+    'quizzes/tekhnicheskoe/quiz-kakaya-knopka': './quizzes/tekhnicheskoe/quiz-kakaya-knopka.js',
+    'pages/quiz/quiz-engine-scored': './pages/quiz/quiz-engine-scored.js',
+    'quizzes/menedzhment/quiz-tvoy-uroven-ustalosti': './quizzes/menedzhment/quiz-tvoy-uroven-ustalosti.js',
     'articles/article': './articles/article.js',
     'articles/menedzhment/prodjekt/article-strukturizaciya-timlida': './articles/menedzhment/prodjekt/article-strukturizaciya-timlida.jsx',
     'articles/menedzhment/prodjekt/article-project-charter': './articles/menedzhment/prodjekt/article-project-charter.jsx',
@@ -108,7 +111,8 @@ module.exports = {
               '**/articles.js',
               '**/quiz.js',
               '**/quiz-run.js',
-              '**/quiz-engine.js'
+              '**/quiz-engine.js',
+              '**/quiz-engine-scored.js'
             ]
           }
         },

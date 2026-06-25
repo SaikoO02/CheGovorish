@@ -11,6 +11,9 @@ module.exports = {
     'pages/articles/articles': './pages/articles/articles.js',
     'pages/quiz/quiz': './pages/quiz/quiz.js',
     'pages/quiz/quiz-run': './pages/quiz/quiz-run.js',
+    'pages/quiz/quiz-engine': './pages/quiz/quiz-engine.js',
+    'quizzes/tekhnicheskoe/quiz-aytishnyy-termin': './quizzes/tekhnicheskoe/quiz-aytishnyy-termin.js',
+    'quizzes/tvorcheskoe/quiz-komponenty-v-figma': './quizzes/tvorcheskoe/quiz-komponenty-v-figma.js',
     'articles/article': './articles/article.js',
     'articles/menedzhment/prodjekt/article-strukturizaciya-timlida': './articles/menedzhment/prodjekt/article-strukturizaciya-timlida.jsx',
     'articles/menedzhment/prodjekt/article-project-charter': './articles/menedzhment/prodjekt/article-project-charter.jsx',
@@ -20,6 +23,12 @@ module.exports = {
     'articles/menedzhment/produkt/article-b2b-vs-b2c': './articles/menedzhment/produkt/article-b2b-vs-b2c.jsx',
     'articles/menedzhment/produkt/article-portfolio-pm': './articles/menedzhment/produkt/article-portfolio-pm.jsx',
     'articles/menedzhment/produkt/article-google-stadia': './articles/menedzhment/produkt/article-google-stadia.jsx',
+    'articles/menedzhment/produkt/article-product-market-fit': './articles/menedzhment/produkt/article-product-market-fit.jsx',
+    'articles/menedzhment/timlid/article-vygoranie-razrabotchika': './articles/menedzhment/timlid/article-vygoranie-razrabotchika.jsx',
+    'articles/menedzhment/timlid/article-daily-standup': './articles/menedzhment/timlid/article-daily-standup.jsx',
+    'articles/menedzhment/timlid/article-pervye-90-dney': './articles/menedzhment/timlid/article-pervye-90-dney.jsx',
+    'articles/menedzhment/timlid/article-mikro-vs-makro-menedzhment': './articles/menedzhment/timlid/article-mikro-vs-makro-menedzhment.jsx',
+    'articles/menedzhment/timlid/article-sindrom-samozvanca': './articles/menedzhment/timlid/article-sindrom-samozvanca.jsx',
     'articles/tekhnicheskoe/razrabotka/article-sovremennyy-react': './articles/tekhnicheskoe/razrabotka/article-sovremennyy-react.jsx',
     'articles/tvorcheskoe/produkt-dizayn/article-asinkhronnost-backend': './articles/tvorcheskoe/produkt-dizayn/article-asinkhronnost-backend.jsx',
     'articles/tekhnicheskoe/razrabotka/article-oshibki-design-system': './articles/tekhnicheskoe/razrabotka/article-oshibki-design-system.jsx',
@@ -98,9 +107,15 @@ module.exports = {
               '**/glossary.js',
               '**/articles.js',
               '**/quiz.js',
-              '**/quiz-run.js'
+              '**/quiz-run.js',
+              '**/quiz-engine.js'
             ]
           }
+        },
+        {
+          from: 'quizzes',
+          to: 'quizzes',
+          globOptions: { ignore: ['**/*.js'] }
         },
         {
           from: 'articles',

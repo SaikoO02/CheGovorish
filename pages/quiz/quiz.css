@@ -198,6 +198,10 @@ body.page-quiz .main_page_background {
   min-height: 180px;
 }
 
+.quiz-tile[hidden] {
+  display: none;
+}
+
 .quiz-tile__media {
   background-size: cover;
   background-position: center;

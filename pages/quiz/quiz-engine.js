@@ -90,10 +90,16 @@ function runQuiz() {
 
     const descEl = document.getElementById("quiz-finish-desc");
     if (descEl) {
-      descEl.textContent =
-        score === quiz.length
-          ? "Ты истинный сеньор! Можешь устраиваться тимлидом."
-          : "Неплохо! Попробуй сыграть ещё раз и улучшить результат.";
+      const tiers = window.QUIZ_SCORE_RESULTS;
+      if (tiers && tiers.length) {
+        const tier = tiers.find((t) => score >= t.min) || tiers[tiers.length - 1];
+        descEl.textContent = tier.text;
+      } else {
+        descEl.textContent =
+          score === quiz.length
+            ? "Ты истинный сеньор! Можешь устраиваться тимлидом."
+            : "Неплохо! Попробуй сыграть ещё раз и улучшить результат.";
+      }
     }
   }
 

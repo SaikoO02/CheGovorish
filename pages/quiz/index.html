@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="../../image/F225.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="../../" />
     <title>Квизы</title>
@@ -14,7 +13,6 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="pages/quiz/quiz.css" />
-    <script src="main.js" defer></script>
     <script src="pages/quiz/quiz.js" defer></script>
     <script src="footer-loader.js" defer></script>
     <script src="footer-animation.js" defer></script>
@@ -23,10 +21,7 @@
     <header class="block main_page_background">
       <div class="container">
         <div class="header">
-          <a class="logo" href="pages/home/" aria-label="Logo">Логотип</a>
-
-          <button class="menu-burger" type="button" aria-label="Открыть меню"></button>
-
+          <a class="logo" href="/" aria-label="Logo">Логотип</a>
           <nav class="menu" aria-label="Main menu">
             <a class="menu__item" href="pages/themes/">темы</a>
             <a class="menu__item" href="pages/glossary/">глоссарий</a>
@@ -147,14 +142,14 @@
           </article>
 
           <article
-            class="quiz-hero"
+            class="quiz-hero quiz-hero--creative"
             id="quiz-hero-card-creative"
             role="button"
             tabindex="0"
             aria-label="Открыть квиз для творческого IT"
             data-quiz-topic-card="creative"
             data-quiz-answer-type="short"
-            hidden
+            data-quiz-href="quizzes/tvorcheskoe/quiz-ugadai-sayt-po-maketu.html"
           >
             <div class="quiz-hero__inner">
               <div class="quiz-hero__left">
@@ -164,11 +159,16 @@
                   </span>
                   <span>Короткие ответы</span>
                 </div>
-                <div class="quiz-hero__meta">—</div>
-                <h2 class="quiz-hero__title">Скоро</h2>
-                <p class="quiz-hero__desc">Добавим квизы по дизайну, геймдеву и креативным ролям.</p>
-                <button class="quiz-hero__cta" type="button" disabled aria-disabled="true">Скоро</button>
+
+                <div class="quiz-hero__copy">
+                  <div class="quiz-hero__meta">10 дней назад × 115 игроков</div>
+                  <h2 class="quiz-hero__title">Угадай сайт по макету</h2>
+                  <p class="quiz-hero__desc">
+                    Сможете узнать популярный сайт только по его структуре и расположению элементов? Проверьте свою насмотренность и знание интерфейсов.
+                  </p>
+                </div>
               </div>
+
               <div class="quiz-hero__visual" aria-hidden="true">
                 <div class="quiz-hero__visual-shape"></div>
               </div>
@@ -208,7 +208,7 @@
 
       <section class="quiz-feed" aria-label="Ещё квизы">
         <div class="quiz-feed__grid">
-          <a class="quiz-tile quiz-tile--left-top" href="quizzes/tekhnicheskoe/quiz-komponenty-v-figma.html" data-quiz-topic-card="tech" data-quiz-answer-type="short" hidden>
+          <a class="quiz-tile quiz-tile--left-top quiz-tile--tech-1" href="quizzes/tekhnicheskoe/quiz-komponenty-v-figma.html" data-quiz-topic-card="tech" data-quiz-answer-type="short" hidden>
             <div class="quiz-tile__media" style="background-image: url('image/image704.svg');"></div>
             <div class="quiz-tile__body">
               <div class="quiz-tile__meta">1 день назад × 4 игрока</div>
@@ -221,7 +221,7 @@
             </div>
           </a>
 
-          <a class="quiz-tile quiz-tile--left-bottom" href="quizzes/tekhnicheskoe/quiz-kakaya-knopka.html" data-quiz-topic-card="tech" data-quiz-answer-type="short" hidden>
+          <a class="quiz-tile quiz-tile--left-bottom quiz-tile--tech-2" href="quizzes/tekhnicheskoe/quiz-kakaya-knopka.html" data-quiz-topic-card="tech" data-quiz-answer-type="short" hidden>
             <div class="quiz-tile__media" style="background-image: url('image/image203.png');"></div>
             <div class="quiz-tile__body">
               <div class="quiz-tile__meta">3 дня назад × 27 игроков</div>
@@ -234,12 +234,90 @@
             </div>
           </a>
 
-          <a class="quiz-tile quiz-tile--right-large" href="quizzes/menedzhment/quiz-tvoy-uroven-ustalosti.html" data-quiz-topic-card="mgmt" data-quiz-answer-type="short" hidden>
-            <div class="quiz-tile__media" style="background-image: url('image/image202.png');"></div>
+          <a class="quiz-tile quiz-tile--right-large quiz-tile--tech-3" href="quizzes/tekhnicheskoe/quiz-tvoy-uroven-ustalosti.html" data-quiz-topic-card="tech" data-quiz-answer-type="short" hidden>
+            <div class="quiz-tile__media" style="background-image: url('image/image112.png');"></div>
             <div class="quiz-tile__body">
               <div class="quiz-tile__meta">15 дней назад × 154 игрока</div>
               <div class="quiz-tile__title">Твой уровень усталости</div>
               <div class="quiz-tile__desc">Пройди тест на выгорание тимлида. По шкале: «всё ок» — «пора в отпуск» — «нужен коуч/терапевт».</div>
+              <div class="quiz-tile__badge">
+                <span class="quiz-tile__badge-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <span>Короткие ответы</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="quiz-tile quiz-tile--left-top quiz-tile--creative-1" href="" data-quiz-topic-card="creative" data-quiz-answer-type="short" hidden>
+            <div class="quiz-tile__media" style="background-image: url('image/image23.svg');"></div>
+            <div class="quiz-tile__body">
+              <div class="quiz-tile__meta">2 дня назад × 57 игроков</div>
+              <div class="quiz-tile__title">Цвет в интерфейсах</div>
+              <div class="quiz-tile__desc">Проверьте свои знания о цвете в UX/UI-дизайне.</div>
+              <div class="quiz-tile__badge">
+                <span class="quiz-tile__badge-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <span>Короткие ответы</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="quiz-tile quiz-tile--left-bottom quiz-tile--creative-2" href="" data-quiz-topic-card="creative" data-quiz-answer-type="short" hidden>
+            <div class="quiz-tile__media" style="background-image: url('image/image203.png');"></div>
+            <div class="quiz-tile__body">
+              <div class="quiz-tile__meta">7 дня назад × 11 игроков</div>
+              <div class="quiz-tile__title">Угадай плагин для AF </div>
+              <div class="quiz-tile__desc">Проверьте, насколько хорошо вы знаете популярные плагины и их возможности.</div>
+              <div class="quiz-tile__badge">
+                <span class="quiz-tile__badge-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <span>Короткие ответы</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="quiz-tile quiz-tile--right-large quiz-tile--creative-3" href="" data-quiz-topic-card="creative" data-quiz-answer-type="short" hidden>
+            <div class="quiz-tile__media" style="background-image: url('image/image202.png');"></div>
+            <div class="quiz-tile__body">
+              <div class="quiz-tile__meta">5 дня назад × 107 игроков</div>
+              <div class="quiz-tile__title">JTBD</div>
+              <div class="quiz-tile__desc">Проверьте, насколько хорошо вы понимаете подход JTBD и умеете определять реальные задачи и потребности пользователей, а не только их запросы.</div>
+              <div class="quiz-tile__badge">
+                <span class="quiz-tile__badge-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <span>Короткие ответы</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="quiz-tile quiz-tile--left-top quiz-tile--mgmt-1" href="" data-quiz-topic-card="mgmt" data-quiz-answer-type="short" hidden>
+            <div class="quiz-tile__media"></div>
+            <div class="quiz-tile__body">
+              <div class="quiz-tile__meta"></div>
+              <div class="quiz-tile__title"></div>
+              <div class="quiz-tile__desc"></div>
+              <div class="quiz-tile__badge">
+                <span class="quiz-tile__badge-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <span>Короткие ответы</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="quiz-tile quiz-tile--left-bottom quiz-tile--mgmt-2" href="" data-quiz-topic-card="mgmt" data-quiz-answer-type="short" hidden>
+            <div class="quiz-tile__media"></div>
+            <div class="quiz-tile__body">
+              <div class="quiz-tile__meta"></div>
+              <div class="quiz-tile__title"></div>
+              <div class="quiz-tile__desc"></div>
+              <div class="quiz-tile__badge">
+                <span class="quiz-tile__badge-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <span>Короткие ответы</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="quiz-tile quiz-tile--right-large quiz-tile--mgmt-3" href="" data-quiz-topic-card="mgmt" data-quiz-answer-type="short" hidden>
+            <div class="quiz-tile__media"></div>
+            <div class="quiz-tile__body">
+              <div class="quiz-tile__meta"></div>
+              <div class="quiz-tile__title"></div>
+              <div class="quiz-tile__desc"></div>
               <div class="quiz-tile__badge">
                 <span class="quiz-tile__badge-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
                 <span>Короткие ответы</span>
@@ -254,10 +332,10 @@
             class="quiz-hero"
             role="button"
             tabindex="0"
-            aria-label="Открыть квиз Айтишный термин"
+            aria-label="Открыть квиз Шутки айтишников"
             data-quiz-topic-card="tech"
             data-quiz-answer-type="short"
-            data-quiz-href="quizzes/tekhnicheskoe/quiz-aytishnyy-termin.html"
+            data-quiz-href="quizzes/tekhnicheskoe/quiz-shutki-aytishnikov.html"
           >
             <div class="quiz-hero__inner">
               <div class="quiz-hero__left">
@@ -285,6 +363,68 @@
           </article>
         </div>
       </section>
+
+      <article
+        class="quiz-hero quiz-hero--creative-long container"
+        id="quiz-hero-card-creative-long"
+        role="button"
+        tabindex="0"
+        aria-label="Открыть квиз для творческого IT (длинные ответы)"
+        data-quiz-topic-card="creative"
+        data-quiz-answer-type="short"
+      >
+        <div class="quiz-hero__inner">
+          <div class="quiz-hero__left">
+            <div class="quiz-hero__badge">
+              <span class="quiz-hero__badge-icon" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </span>
+              <span>Длинные ответы</span>
+            </div>
+
+            <div class="quiz-hero__copy">
+              <div class="quiz-hero__meta">3 дня назад × 67 игроков</div>
+              <h2 class="quiz-hero__title">Этичный дизайн </h2>
+              <p class="quiz-hero__desc">Ответьте на вопросы и узнайте, насколько ваши дизайнерские решения соответствуют принципам этичного дизайна.</p>
+            </div>
+          </div>
+
+          <div class="quiz-hero__visual" aria-hidden="true">
+            <div class="quiz-hero__visual-shape"></div>
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="quiz-hero quiz-hero--mgmt-long container"
+        id="quiz-hero-card-mgmt-long"
+        role="button"
+        tabindex="0"
+        aria-label="Открыть квиз для менеджмента (длинные ответы)"
+        data-quiz-topic-card="mgmt"
+        data-quiz-answer-type="short"
+      >
+        <div class="quiz-hero__inner">
+          <div class="quiz-hero__left">
+            <div class="quiz-hero__badge">
+              <span class="quiz-hero__badge-icon" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </span>
+              <span>Длинные ответы</span>
+            </div>
+
+            <div class="quiz-hero__copy">
+              <div class="quiz-hero__meta">—</div>
+              <h2 class="quiz-hero__title"></h2>
+              <p class="quiz-hero__desc"></p>
+            </div>
+          </div>
+
+          <div class="quiz-hero__visual" aria-hidden="true">
+            <div class="quiz-hero__visual-shape"></div>
+          </div>
+        </div>
+      </article>
 
     </main>
 

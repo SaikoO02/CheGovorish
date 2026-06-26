@@ -2,10 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="../../image/F225.svg">
+    <link rel="icon" type="image/svg+xml" href="../../image/F225.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="../../" />
-    <title>Квиз — Айтишный термин</title>
+    <title>Квиз — Что делать в этой ситуации?</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +14,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="pages/quiz/quiz-run.css" />
-    <script src="pages/quiz/quiz-run.js" defer></script>
+    <script src="quizzes/menedzhment/quiz-chto-delat-v-etoy-situatsii.js" defer></script>
+    <script src="pages/quiz/quiz-engine.js" defer></script>
     <script src="footer/footer-loader.js" defer></script>
     <script src="footer/footer-animation.js" defer></script>
   </head>
@@ -23,7 +24,7 @@
     <header class="block main_page_background">
       <div class="container">
         <div class="header">
-          <a class="logo" href="pages/home/" aria-label="Logo">Логотип</a>
+          <a class="logo" href="/" aria-label="Logo">Логотип</a>
           <nav class="menu" aria-label="Main menu">
             <a class="menu__item" href="pages/themes/">темы</a>
             <a class="menu__item" href="pages/glossary/">глоссарий</a>
@@ -31,6 +32,7 @@
             <a class="menu__item" href="pages/quiz/">квизы</a>
             <a class="menu__item" href="#">о медиа</a>
           </nav>
+          <button class="menu-burger" aria-label="Открыть меню" aria-expanded="false"></button>
         </div>
       </div>
     </header>
@@ -40,13 +42,11 @@
         <div class="container quiz-run-intro__inner">
           <div class="quiz-run-intro__top">
             <p class="quiz-run-intro__kicker">КВИЗ</p>
-            <a class="quiz-run-intro__back" href="quiz.html">&lt;&lt; Все квизы</a>
+            <a class="quiz-run-intro__back" href="pages/quiz/">&lt;&lt; Все квизы</a>
           </div>
-          <h1 class="quiz-run-intro__title" id="quiz-intro-title">АЙТИШНЫЙ ТЕРМИН</h1>
+          <h1 class="quiz-run-intro__title" id="quiz-intro-title">ЧТО ДЕЛАТЬ В ЭТОЙ СИТУАЦИИ?</h1>
           <p class="quiz-run-intro__desc">
-            10 вопросов о программисстком сленге, железе и разработке.
-            Выбери правильный вариант из четырёх, набери баллы и узнай, какой ты айтишник.
-            Поехали!
+            10 реальных рабочих ситуаций. Выберите лучшее решение и проверьте, насколько вы готовы к вызовам менеджмента.
           </p>
           <button class="quiz-run-intro__play" type="button" id="quiz-start">ИГРАТЬ</button>
         </div>
@@ -54,7 +54,7 @@
 
       <section class="quiz-game" id="quiz-game" aria-label="Квиз" hidden>
         <div class="container quiz-game__top">
-          <a class="quiz-game__back" href="quiz.html">&lt;&lt; Все квизы</a>
+          <a class="quiz-game__back" href="pages/quiz/">&lt;&lt; Все квизы</a>
           <div class="quiz-game__progress" id="quiz-progress">1/10</div>
         </div>
 
@@ -73,7 +73,7 @@
           <p class="quiz-run__result-text" id="quiz-result-text"></p>
           <div class="quiz-run__result-actions">
             <button class="quiz-run__btn quiz-run__btn--primary" type="button" id="quiz-restart">Пройти ещё раз</button>
-            <a class="quiz-run__btn quiz-run__btn--ghost" href="quiz.html">К списку</a>
+            <a class="quiz-run__btn quiz-run__btn--ghost" href="pages/quiz/">К списку</a>
           </div>
         </div>
       </section>
@@ -82,13 +82,13 @@
         <div class="quiz-finish__content container">
           <div class="quiz-finish__left">
             <h2 class="quiz-finish__kicker">ВАШ РЕЗУЛЬТАТ:</h2>
-            <div class="quiz-finish__score" id="quiz-finish-score">0/0</div>
+            <div class="quiz-finish__score" id="quiz-finish-score"></div>
             <p class="quiz-finish__desc" id="quiz-finish-desc"></p>
             <div class="quiz-finish__actions">
               <button class="quiz-finish__btn quiz-finish__btn--ghost" type="button" id="quiz-finish-retry">
                 &lt;&lt; Сыграть ещё
               </button>
-              <a class="quiz-finish__btn" href="quiz.html">Другие квизы &gt;&gt;</a>
+              <a class="quiz-finish__btn" href="pages/quiz/">Другие квизы &gt;&gt;</a>
             </div>
           </div>
 
@@ -97,5 +97,4 @@
       </section>
     </main>
   </body>
- </html>
-
+</html>

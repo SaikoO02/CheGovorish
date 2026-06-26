@@ -7,7 +7,7 @@ body.page-quiz .main_page_background {
   background-image: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 675px) {
   body.page-quiz .main_page_background {
     min-height: 0;
     overflow: visible;

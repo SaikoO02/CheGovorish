@@ -12,6 +12,7 @@ body.page-quiz-run header {
   inset: 0 0 auto 0;
   z-index: 30;
   width: 100%;
+  background: transparent;
 }
 
 body.page-quiz-run header.block {
@@ -26,6 +27,11 @@ body.page-quiz-run header .container {
 
 body.page-quiz-run .main_page_background {
   background-image: none;
+  min-height: 0;
+}
+
+body.page-quiz-run .main_page_background::before {
+  display: none;
 }
 
 .page-quiz-run .main_page_background .container {
@@ -642,7 +648,6 @@ body.page-quiz-run .main_page_background {
 @media (max-width: 675px) {
   .quiz-run-intro {
     align-items: stretch;
-    background-image: none;
   }
 
   .quiz-run-intro__inner {

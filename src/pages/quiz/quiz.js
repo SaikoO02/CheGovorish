@@ -20,6 +20,12 @@ function applyFilters() {
   });
 }
 
+function resolveHref(href) {
+  const base = document.querySelector("base");
+  if (!base) return href;
+  return new URL(href, base.href).href;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setTopic(state.topic);
   applyFilters();
@@ -33,12 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!href) return;
     heroCard.addEventListener("click", (e) => {
       if (e.target && e.target.closest && e.target.closest("a")) return;
-      window.location.href = href;
+      window.location.href = resolveHref(href);
     });
     heroCard.addEventListener("keydown", (e) => {
       if (e.key !== "Enter" && e.key !== " ") return;
       e.preventDefault();
-      window.location.href = href;
+      window.location.href = resolveHref(href);
     });
   });
 });

@@ -24,6 +24,7 @@ module.exports = {
     'quizzes/tvorcheskoe/quiz-jtbd': './quizzes/tvorcheskoe/quiz-jtbd.js',
     'quizzes/tvorcheskoe/quiz-etichnyy-dizayn': './quizzes/tvorcheskoe/quiz-etichnyy-dizayn.js',
     'quizzes/menedzhment/quiz-kakoy-ty-menedzher': './quizzes/menedzhment/quiz-kakoy-ty-menedzher.js',
+    'quizzes/menedzhment/quiz-ugadai-agile-termin': './quizzes/menedzhment/quiz-ugadai-agile-termin.js',
     'articles/article': './articles/article.js',
     'articles/menedzhment/prodjekt/article-strukturizaciya-timlida': './articles/menedzhment/prodjekt/article-strukturizaciya-timlida.jsx',
     'articles/menedzhment/prodjekt/article-project-charter': './articles/menedzhment/prodjekt/article-project-charter.jsx',
@@ -145,8 +146,7 @@ module.exports = {
         { from: 'pages/quiz/quiz-run.css', to: 'pages/quiz/quiz-run.css' },
         { from: 'articles/article.css', to: 'articles/article.css' },
         { from: 'footer/footer.html', to: 'footer/footer.html' },
-        { from: 'image', to: 'image' },
-        { from: 'fonts', to: 'fonts' }
+        { from: 'image', to: 'image' }
       ]
     })
   ],

@@ -125,7 +125,7 @@ body.page-quiz .main_page_background {
     linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.55) 55%, rgba(0, 0, 0, 0.15) 100%),
     url("../../image/quiz-hero.png");
   background-repeat: no-repeat, no-repeat;
-  /* 1-й слой (градиент) — на всю карточку; 2-й слой (картинка) — меньше и ближе к правому краю */
+  /* градиент + картинка справа */
   background-position: center, right 18px center;
   background-size: cover, auto 92%;
 }

@@ -137,7 +137,7 @@ function next() {
     return;
   }
 
-  // финальный слайд
+  // финальный экран
   const game = document.getElementById("quiz-game");
   const finish = document.getElementById("quiz-finish");
   const result = document.getElementById("quiz-result");
@@ -175,7 +175,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const finish = $("quiz-finish");
   const startBtn = $("quiz-start");
   const setScreen = (screen) => {
-    // screen: "intro" | "game"
     const isGame = screen === "game";
     if (intro) intro.hidden = isGame;
     if (game) game.hidden = !isGame;

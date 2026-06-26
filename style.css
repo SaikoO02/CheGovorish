@@ -481,7 +481,7 @@ a {
   margin: 0 auto 220px;
 }
 
-/* ОСИ */
+/* оси */
 .axis {
   position: absolute;
   z-index: 1;
@@ -515,7 +515,7 @@ a {
   top: 105%;
 }
 
-/* ЗАГОЛОВКИ */
+/* заголовки */
 .title {
   position: absolute;
   font-size: 36px;
@@ -1294,4 +1294,3 @@ a {
   .map .item:nth-child(16) { order: 12; }
   .map .item:nth-child(17) { order: 13; }
 }
-/*# sourceMappingURL=style.css.map */

@@ -639,3 +639,63 @@ body.page-quiz-run .main_page_background {
   }
 }
 
+@media (max-width: 675px) {
+  .quiz-run-intro__inner {
+    padding-bottom: 60px;
+  }
+
+  .quiz-run-intro__top {
+    width: 100%;
+  }
+
+  .quiz-run-intro__kicker {
+    font-size: 24px;
+  }
+
+  .quiz-run-intro__back {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .quiz-run-intro__title {
+    font-size: clamp(32px, 9vw, 52px);
+    margin-top: 12px;
+  }
+
+  .quiz-run-intro__desc {
+    width: 100%;
+    align-self: flex-start;
+    font-size: 14px;
+    margin-top: 14px;
+  }
+
+  .quiz-run-intro__play {
+    align-self: flex-start;
+    width: 100%;
+    margin-top: 28px;
+    font-size: 16px;
+  }
+
+  .quiz-finish__content {
+    padding-top: 100px;
+  }
+
+  .quiz-finish__kicker {
+    font-size: 22px;
+  }
+
+  .quiz-finish__score {
+    font-size: 56px;
+  }
+
+  .quiz-finish__desc {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+
+  .quiz-finish__btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+

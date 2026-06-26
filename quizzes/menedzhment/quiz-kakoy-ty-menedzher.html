@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="../../image/F225.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="../../" />
-    <title>Квиз — Угадай плагин для Figma</title>
+    <title>Квиз — Какой ты менеджер?</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,8 +14,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="pages/quiz/quiz-run.css" />
-    <script src="quizzes/tvorcheskoe/quiz-ugadai-plagin-dlya-figma.js" defer></script>
-    <script src="pages/quiz/quiz-engine.js" defer></script>
+    <script src="quizzes/menedzhment/quiz-kakoy-ty-menedzher.js" defer></script>
+    <script src="pages/quiz/quiz-engine-scored.js" defer></script>
     <script src="footer/footer-loader.js" defer></script>
     <script src="footer/footer-animation.js" defer></script>
   </head>
@@ -43,9 +43,9 @@
             <p class="quiz-run-intro__kicker">КВИЗ</p>
             <a class="quiz-run-intro__back" href="pages/quiz/">&lt;&lt; Все квизы</a>
           </div>
-          <h1 class="quiz-run-intro__title" id="quiz-intro-title">УГАДАЙ ПЛАГИН ДЛЯ FIGMA</h1>
+          <h1 class="quiz-run-intro__title" id="quiz-intro-title">КАКОЙ ТЫ МЕНЕДЖЕР?</h1>
           <p class="quiz-run-intro__desc">
-            10 вопросов о плагинах Figma. Проверьте, насколько хорошо вы знаете популярные инструменты и их возможности. Поехали!
+            8 вопросов о стиле управления. Здесь нет правильных ответов — только честные. Узнайте, кто вы: демократ, стратег, микроменеджер или наставник.
           </p>
           <button class="quiz-run-intro__play" type="button" id="quiz-start">ИГРАТЬ</button>
         </div>
@@ -54,7 +54,7 @@
       <section class="quiz-game" id="quiz-game" aria-label="Квиз" hidden>
         <div class="container quiz-game__top">
           <a class="quiz-game__back" href="pages/quiz/">&lt;&lt; Все квизы</a>
-          <div class="quiz-game__progress" id="quiz-progress">1/10</div>
+          <div class="quiz-game__progress" id="quiz-progress">1/8</div>
         </div>
 
         <div class="container">
@@ -81,7 +81,7 @@
         <div class="quiz-finish__content container">
           <div class="quiz-finish__left">
             <h2 class="quiz-finish__kicker">ВАШ РЕЗУЛЬТАТ:</h2>
-            <div class="quiz-finish__score" id="quiz-finish-score">0/0</div>
+            <div class="quiz-finish__score" id="quiz-finish-score"></div>
             <p class="quiz-finish__desc" id="quiz-finish-desc"></p>
             <div class="quiz-finish__actions">
               <button class="quiz-finish__btn quiz-finish__btn--ghost" type="button" id="quiz-finish-retry">

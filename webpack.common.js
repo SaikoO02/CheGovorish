@@ -23,6 +23,7 @@ module.exports = {
     'quizzes/tvorcheskoe/quiz-ugadai-plagin-dlya-figma': './quizzes/tvorcheskoe/quiz-ugadai-plagin-dlya-figma.js',
     'quizzes/tvorcheskoe/quiz-jtbd': './quizzes/tvorcheskoe/quiz-jtbd.js',
     'quizzes/tvorcheskoe/quiz-etichnyy-dizayn': './quizzes/tvorcheskoe/quiz-etichnyy-dizayn.js',
+    'quizzes/menedzhment/quiz-kakoy-ty-menedzher': './quizzes/menedzhment/quiz-kakoy-ty-menedzher.js',
     'articles/article': './articles/article.js',
     'articles/menedzhment/prodjekt/article-strukturizaciya-timlida': './articles/menedzhment/prodjekt/article-strukturizaciya-timlida.jsx',
     'articles/menedzhment/prodjekt/article-project-charter': './articles/menedzhment/prodjekt/article-project-charter.jsx',
@@ -72,8 +73,8 @@ module.exports = {
     'articles/tvorcheskoe/motion/article-testirovanie-animaciy': './articles/tvorcheskoe/motion/article-testirovanie-animaciy.jsx',
     'articles/tvorcheskoe/motion/article-motion-prototipy-workflow': './articles/tvorcheskoe/motion/article-motion-prototipy-workflow.jsx',
     'articles/tvorcheskoe/motion/article-motion-dlya-dashbordov': './articles/tvorcheskoe/motion/article-motion-dlya-dashbordov.jsx',
-    'footer-loader': './footer-loader.js',
-    'footer-animation': './footer-animation.js'
+    'footer/footer-loader': './footer/footer-loader.js',
+    'footer/footer-animation': './footer/footer-animation.js'
   },
   output: {
     filename: '[name].js',
@@ -143,7 +144,7 @@ module.exports = {
         { from: 'pages/quiz/quiz.css', to: 'pages/quiz/quiz.css' },
         { from: 'pages/quiz/quiz-run.css', to: 'pages/quiz/quiz-run.css' },
         { from: 'articles/article.css', to: 'articles/article.css' },
-        { from: 'footer.html', to: 'footer.html' },
+        { from: 'footer/footer.html', to: 'footer/footer.html' },
         { from: 'image', to: 'image' },
         { from: 'fonts', to: 'fonts' }
       ]

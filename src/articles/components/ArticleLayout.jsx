@@ -19,7 +19,7 @@ export default function ArticleLayout({
 
     const container = document.getElementById('footer-container')
     if (container && !container.innerHTML) {
-      const candidates = ['footer.html', '../footer.html', '../../footer.html', '../../../footer.html']
+      const candidates = ['footer/footer.html', '../footer/footer.html', '../../footer/footer.html', '../../../footer/footer.html']
       const tryNext = i =>
         fetch(candidates[i])
           .then(r => {
@@ -34,11 +34,16 @@ export default function ArticleLayout({
       tryNext(0)
         .then(({ html, loadedFrom }) => {
           container.innerHTML = html
-          const prefix = loadedFrom.slice(0, loadedFrom.length - 'footer.html'.length)
+          const prefix = loadedFrom.slice(0, loadedFrom.length - 'footer/footer.html'.length)
           container.querySelectorAll('[src]').forEach(el => {
             const src = el.getAttribute('src')
             if (src && src.startsWith('image/')) el.setAttribute('src', prefix + src)
           })
+          const vectorImg = container.querySelector('.footer__vector img')
+          if (!vectorImg) return
+          return fetch(vectorImg.getAttribute('src'))
+            .then(r => r.text())
+            .then(svgText => { vectorImg.parentElement.innerHTML = svgText })
         })
         .catch(() => {})
     }

@@ -22,6 +22,34 @@ function loadFooterHtml() {
   return tryNext(0);
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBurger = document.querySelector('.menu-burger');
+  const menu = document.querySelector('.menu');
+  if (!menuBurger || !menu) return;
+
+  const closeMenu = () => {
+    menu.classList.remove('is-open');
+    menuBurger.setAttribute('aria-expanded', 'false');
+  };
+
+  menuBurger.setAttribute('aria-expanded', 'false');
+  menuBurger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = menu.classList.toggle('is-open');
+    menuBurger.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  menu.addEventListener('click', (e) => {
+    if (e.target.closest('.menu__item')) closeMenu();
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!menu.classList.contains('is-open')) return;
+    if (e.target.closest('.menu') || e.target.closest('.menu-burger')) return;
+    closeMenu();
+  });
+});
+
 window.footerLoaded = loadFooterHtml()
   .then(({ html, loadedFrom }) => {
     const container = document.getElementById('footer-container');

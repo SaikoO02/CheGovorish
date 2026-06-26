@@ -137,7 +137,6 @@ function next() {
     return;
   }
 
-  // финальный экран
   const game = document.getElementById("quiz-game");
   const finish = document.getElementById("quiz-finish");
   const result = document.getElementById("quiz-result");
